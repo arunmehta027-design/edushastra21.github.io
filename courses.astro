@@ -1,0 +1,893 @@
+---
+// EduShastra — Courses Page
+// Astro + Tailwind CSS
+// Design: Dark editorial luxury — think Stripe meets IIM
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses | EduShastra — CAT · GMAT · CUET · GMCAT Coaching</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Explore EduShastra's ability-based CAT, GMAT, CUET, GMCAT & SAT courses. Money-back guarantee, small batches of 25, lifetime validity, and free MBA admission consulting." />
+  <meta name="keywords" content="CAT coaching 2026, GMAT coaching India, CUET preparation, GMCAT course, SAT coaching Delhi, affordable MBA coaching" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.edushastra.com/courses/" />
+  <meta property="og:title" content="Courses | EduShastra" />
+  <meta property="og:description" content="CAT · GMAT · CUET · GMCAT · SAT. Ability-based coaching. Small batches. Guaranteed results." />
+  <meta property="og:url" content="https://www.edushastra.com/courses/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN — replace with proper build in production -->
+  <script is:inline src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            body: ['DM Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: { 300:'#fdba74', 400:'#fb923c', 500:'#f97316', 600:'#ea6c0a', 700:'#c2540a' },
+            ink:   { 50:'#fafafa', 100:'#f5f5f5', 200:'#d4d4d4', 300:'#a3a3a3', 400:'#737373', 600:'#404040', 700:'#2d2d2d', 800:'#1a1a1a', 900:'#0d0d0d' }
+          },
+          keyframes: {
+            fadeUp:   { '0%':{ opacity:'0', transform:'translateY(20px)' }, '100%':{ opacity:'1', transform:'translateY(0)' } },
+            shimmer:  { '0%':{ backgroundPosition:'200% 0' }, '100%':{ backgroundPosition:'-200% 0' } },
+            marquee:  { '0%':{ transform:'translateX(0)' }, '100%':{ transform:'translateX(-50%)' } },
+            pulse2:   { '0%,100%':{ opacity:'1' }, '50%':{ opacity:'0.4' } },
+          },
+          animation: {
+            'fade-up': 'fadeUp 0.55s ease forwards',
+            'shimmer':  'shimmer 2.5s linear infinite',
+            'marquee':  'marquee 28s linear infinite',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family:'DM Sans',sans-serif; background:#0d0d0d; color:#f5f5f5; overflow-x:hidden; }
+    h1,h2,h3,h4,.font-display { font-family:'Syne',sans-serif; }
+
+    /* Grain */
+    body::before {
+      content:''; position:fixed; inset:0; z-index:0; pointer-events:none;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      opacity:.3;
+    }
+
+    /* Glass */
+    .glass {
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.09);
+      backdrop-filter:blur(14px);
+    }
+    .glass-hover:hover {
+      background:rgba(255,255,255,0.07);
+      border-color:rgba(249,115,22,0.35);
+    }
+
+    /* Nav */
+    .nav-blur { background:rgba(13,13,13,0.85); backdrop-filter:blur(20px); border-bottom:1px solid rgba(255,255,255,0.06); }
+
+    /* Scroll reveal */
+    .reveal { opacity:0; transform:translateY(24px); transition:opacity 0.65s ease, transform 0.65s ease; }
+    .revealed { opacity:1; transform:translateY(0); }
+
+    /* Stagger children */
+    .stagger > * { opacity:0; transform:translateY(20px); transition:opacity 0.5s ease, transform 0.5s ease; }
+    .stagger.revealed > *:nth-child(1) { opacity:1; transform:none; transition-delay:0ms; }
+    .stagger.revealed > *:nth-child(2) { opacity:1; transform:none; transition-delay:100ms; }
+    .stagger.revealed > *:nth-child(3) { opacity:1; transform:none; transition-delay:200ms; }
+    .stagger.revealed > *:nth-child(4) { opacity:1; transform:none; transition-delay:300ms; }
+    .stagger.revealed > *:nth-child(5) { opacity:1; transform:none; transition-delay:400ms; }
+
+    /* CTA glow */
+    .cta-glow:hover { box-shadow:0 0 28px rgba(249,115,22,0.5); }
+
+    /* Course card border gradient on hover */
+    .course-card {
+      position:relative; border:1px solid rgba(255,255,255,0.08);
+      transition:border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+    .course-card:hover {
+      border-color:rgba(249,115,22,0.4);
+      transform:translateY(-4px);
+      box-shadow:0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(249,115,22,0.15);
+    }
+    .course-card .top-bar {
+      position:absolute; top:0; left:0; right:0; height:3px;
+      background:linear-gradient(90deg,#f97316,#fb923c);
+      border-radius:16px 16px 0 0;
+      opacity:0; transition:opacity 0.3s;
+    }
+    .course-card:hover .top-bar { opacity:1; }
+
+    /* Badge pill */
+    .badge { display:inline-flex; align-items:center; gap:6px; font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; padding:4px 10px; border-radius:100px; }
+
+    /* Feature tick */
+    .feat { display:flex; align-items:flex-start; gap:10px; }
+    .feat-icon { width:18px; height:18px; border-radius:50%; background:rgba(249,115,22,0.15); display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px; }
+
+    /* Phase step */
+    .phase-step { display:flex; gap:16px; align-items:flex-start; }
+    .phase-num { width:36px; height:36px; border-radius:50%; background:rgba(249,115,22,0.12); border:1px solid rgba(249,115,22,0.3); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-family:'Syne',sans-serif; font-weight:800; color:#f97316; font-size:13px; }
+
+    /* Tabs */
+    .tab-btn { transition:all 0.25s; }
+    .tab-btn.active { background:rgba(249,115,22,0.12); color:#f97316; border-color:rgba(249,115,22,0.4); }
+    .tab-panel { display:none; }
+    .tab-panel.active { display:block; }
+
+    /* Comparison table */
+    .cmp-row:nth-child(even) { background:rgba(255,255,255,0.025); }
+
+    /* Marquee */
+    .marquee-wrap { overflow:hidden; }
+    .marquee-inner { display:flex; width:max-content; animation:marquee 28s linear infinite; }
+
+    /* Accent underline */
+    .u-orange { text-decoration:underline; text-decoration-color:#f97316; text-underline-offset:5px; text-decoration-thickness:2px; }
+
+    /* Hero mesh */
+    .hero-bg {
+      background:
+        radial-gradient(ellipse 70% 60% at 10% 40%, rgba(249,115,22,0.14) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 70% at 90% 10%, rgba(249,115,22,0.08) 0%, transparent 60%),
+        #0d0d0d;
+    }
+  </style>
+</head>
+
+<body class="relative">
+
+<!-- ══════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-blur">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="/" class="font-display text-2xl font-extrabold text-white tracking-tight">Edu<span class="text-brand-500">Shastra</span></a>
+
+    <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-ink-300">
+      <li><a href="/" class="hover:text-brand-400 transition-colors">Home</a></li>
+      <li><a href="/courses/" class="text-brand-400 font-semibold">Courses</a></li>
+      <li><a href="/#apex" class="hover:text-brand-400 transition-colors">Apex Batch</a></li>
+      <li><a href="/#faculty" class="hover:text-brand-400 transition-colors">Faculty</a></li>
+      <li><a href="/#results" class="hover:text-brand-400 transition-colors">Results</a></li>
+      <li><a href="https://www.edushastra.com/contact-us/" class="hover:text-brand-400 transition-colors">Contact</a></li>
+    </ul>
+
+    <div class="flex items-center gap-3">
+      <a href="https://www.edushastra.com/login/" class="hidden md:block text-sm text-ink-300 hover:text-white px-4 py-2 transition-colors">Login</a>
+      <a href="#enroll" class="cta-glow bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300">Enroll Now →</a>
+      <button id="menuBtn" class="md:hidden text-white p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden px-6 pb-5 pt-1 flex flex-col gap-4 text-sm text-ink-300">
+    <a href="/" class="hover:text-brand-400">Home</a>
+    <a href="/courses/" class="text-brand-400 font-semibold">Courses</a>
+    <a href="/#apex" class="hover:text-brand-400">Apex Batch</a>
+    <a href="/#faculty" class="hover:text-brand-400">Faculty</a>
+    <a href="/#results" class="hover:text-brand-400">Results</a>
+    <a href="https://www.edushastra.com/contact-us/" class="hover:text-brand-400">Contact</a>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section class="hero-bg relative pt-36 pb-20 px-6">
+  <div class="max-w-7xl mx-auto relative z-10">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 bg-brand-500/10 border border-brand-500/25 rounded-full px-4 py-1.5 text-brand-400 text-xs font-bold tracking-widest uppercase mb-6">
+        <span class="w-1.5 h-1.5 bg-brand-400 rounded-full" style="animation:pulse2 2s ease-in-out infinite"></span>
+        Admissions Open · 2026 Batches
+      </div>
+      <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] text-white mb-6">
+        Every Course.<br/>
+        <span class="text-brand-500">One Promise.</span><br/>
+        <span class="u-orange">Your Score or Refund.</span>
+      </h1>
+      <p class="text-lg text-ink-300 leading-relaxed max-w-2xl mb-8">
+        Ability-based batches · 25-student cap · Lifetime validity · Free admission consulting. The most honest test-prep institution in India since 2016.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a href="#courses-grid" class="cta-glow bg-brand-500 hover:bg-brand-600 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300">
+          Explore All Courses ↓
+        </a>
+        <a href="#compare" class="glass glass-hover text-white font-semibold px-8 py-4 rounded-full transition-all duration-300">
+          Compare Courses
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating stat pills -->
+  <div class="hidden lg:flex absolute right-12 top-1/2 -translate-y-1/2 flex-col gap-4 z-10">
+    <div class="glass rounded-2xl px-5 py-4 text-right">
+      <p class="font-display text-3xl font-extrabold text-brand-400">₹24,999</p>
+      <p class="text-xs text-ink-300 mt-0.5">CAT Course starts from</p>
+    </div>
+    <div class="glass rounded-2xl px-5 py-4 text-right">
+      <p class="font-display text-3xl font-extrabold text-brand-400">160+</p>
+      <p class="text-xs text-ink-300 mt-0.5">Hours per course cycle</p>
+    </div>
+    <div class="glass rounded-2xl px-5 py-4 text-right">
+      <p class="font-display text-3xl font-extrabold text-brand-400">∞</p>
+      <p class="text-xs text-ink-300 mt-0.5">Lifetime course validity</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     QUICK FILTER TABS
+══════════════════════════════════════ -->
+<div class="sticky top-[65px] z-40 bg-ink-900/90 backdrop-blur-xl border-b border-white/06 px-6 py-3">
+  <div class="max-w-7xl mx-auto flex items-center gap-3 overflow-x-auto scrollbar-hide">
+    <span class="text-xs text-ink-400 font-semibold uppercase tracking-widest whitespace-nowrap mr-2">Jump to:</span>
+    <a href="#cat-section"   class="tab-btn whitespace-nowrap text-xs font-semibold px-4 py-2 rounded-full border border-white/10 text-ink-300 hover:text-brand-400 hover:border-brand-500/40 transition-all">📚 CAT 2026</a>
+    <a href="#gmat-section"  class="tab-btn whitespace-nowrap text-xs font-semibold px-4 py-2 rounded-full border border-white/10 text-ink-300 hover:text-brand-400 hover:border-brand-500/40 transition-all">🌍 GMAT Focus</a>
+    <a href="#gmcat-section" class="tab-btn whitespace-nowrap text-xs font-semibold px-4 py-2 rounded-full border border-white/10 text-ink-300 hover:text-brand-400 hover:border-brand-500/40 transition-all">⚡ GMCAT</a>
+    <a href="#cuet-section"  class="tab-btn whitespace-nowrap text-xs font-semibold px-4 py-2 rounded-full border border-white/10 text-ink-300 hover:text-brand-400 hover:border-brand-500/40 transition-all">🏛️ CUET UG</a>
+    <a href="#sat-section"   class="tab-btn whitespace-nowrap text-xs font-semibold px-4 py-2 rounded-full border border-white/10 text-ink-300 hover:text-brand-400 hover:border-brand-500/40 transition-all">🎓 SAT</a>
+    <a href="#compare"       class="tab-btn whitespace-nowrap text-xs font-semibold px-4 py-2 rounded-full border border-brand-500/30 text-brand-400 hover:bg-brand-500/10 transition-all">⚖️ Compare All</a>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     MARQUEE — Key Differentiators
+══════════════════════════════════════ -->
+<div class="py-5 border-b border-white/05 bg-ink-800/30 overflow-hidden">
+  <div class="marquee-inner text-xs font-semibold text-ink-400 uppercase tracking-widest select-none">
+    <span class="px-10">Ability-Based Model</span><span class="text-brand-500 px-2">·</span>
+    <span class="px-10">Money-Back Guarantee</span><span class="text-brand-500 px-2">·</span>
+    <span class="px-10">Lifetime Course Validity</span><span class="text-brand-500 px-2">·</span>
+    <span class="px-10">Max 25 Students per Batch</span><span class="text-brand-500 px-2">·</span>
+    <span class="px-10">Free MBA Admission Consulting</span><span class="text-brand-500 px-2">·</span>
+    <span class="px-10">Live 24×7 Doubt Solving</span><span class="text-brand-500 px-2">·</span>
+    <span class="px-10">IIM · Harvard · INSEAD Alumni Faculty</span><span class="text-brand-500 px-2">·</span>
+    <span class="px-10">Ability-Based Model</span><span class="text-brand-500 px-2">·</span>
+    <span class="px-10">Money-Back Guarantee</span><span class="text-brand-500 px-2">·</span>
+    <span class="px-10">Lifetime Course Validity</span><span class="text-brand-500 px-2">·</span>
+    <span class="px-10">Max 25 Students per Batch</span><span class="text-brand-500 px-2">·</span>
+    <span class="px-10">Free MBA Admission Consulting</span><span class="text-brand-500 px-2">·</span>
+    <span class="px-10">Live 24×7 Doubt Solving</span><span class="text-brand-500 px-2">·</span>
+    <span class="px-10">IIM · Harvard · INSEAD Alumni Faculty</span><span class="text-brand-500 px-2">·</span>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     COURSES GRID
+══════════════════════════════════════ -->
+<section id="courses-grid" class="py-24 px-6">
+  <div class="max-w-7xl mx-auto">
+
+    <div class="reveal mb-16">
+      <p class="text-brand-400 text-xs font-bold tracking-widest uppercase mb-3">All Programs</p>
+      <h2 class="font-display text-4xl md:text-5xl font-extrabold text-white">Pick Your <span class="text-brand-500">Battleground.</span></h2>
+      <p class="text-ink-300 mt-4 max-w-xl text-sm leading-relaxed">Every course uses our proprietary 4-phase Ability-Based Model. The course ends when <em>you</em> reach your optimal level — not when the calendar says so.</p>
+    </div>
+
+    <!-- ─── CAT ─── -->
+    <div id="cat-section" class="course-card glass rounded-3xl p-0 overflow-hidden mb-8">
+      <div class="top-bar"></div>
+      <div class="grid lg:grid-cols-3 gap-0">
+
+        <!-- Left: Identity -->
+        <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-white/06 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-500/12 flex items-center justify-center text-3xl mb-6">📚</div>
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span class="badge bg-brand-500/15 text-brand-400 border border-brand-500/20">CAT 2026</span>
+              <span class="badge bg-green-500/10 text-green-400 border border-green-500/20">99%ile Guarantee</span>
+            </div>
+            <h3 class="font-display text-3xl font-extrabold text-white mb-3">Common<br/>Admission Test</h3>
+            <p class="text-ink-300 text-sm leading-relaxed">India's most competitive MBA entrance. Target IIM A, B, C, L, K, I and 100+ other top B-schools. Free XAT, SNAP, IIFT, NMAT prep included.</p>
+          </div>
+          <div class="mt-8 space-y-3">
+            <div class="flex items-baseline gap-2">
+              <span class="font-display text-4xl font-extrabold text-white">₹24,999</span>
+              <span class="text-ink-400 text-sm">/ course cycle</span>
+            </div>
+            <p class="text-xs text-ink-400">Lifetime validity · Repeat until optimal level reached</p>
+            <a href="https://www.edushastra.com/cat-preparation/" class="cta-glow block text-center bg-brand-500 hover:bg-brand-600 text-white font-semibold px-6 py-3.5 rounded-xl transition-all duration-300 text-sm mt-4">
+              Enroll in CAT 2026 →
+            </a>
+            <a href="https://www.edushastra.com/cat-preparation/" class="block text-center text-ink-400 hover:text-brand-400 text-xs transition-colors mt-1">View Full Course Details</a>
+          </div>
+        </div>
+
+        <!-- Middle: Features -->
+        <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-white/06">
+          <p class="text-xs font-bold uppercase tracking-widest text-ink-400 mb-5">What's Included</p>
+          <ul class="space-y-4">
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="currentColor" viewBox="0 0 12 12"><path d="M10 3L5 8.5 2 5.5"/><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">160+ hours</strong> expert program per cycle</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">21+ EliteCAT</strong> full-length mock tests</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">Free</strong> XAT, SNAP, IIFT, NMAT prep</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">GK + Soft Skills</strong> for PI/WAT rounds</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">Live 24×7</strong> doubt solving sessions</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">IIM alumni</strong> interview mentoring</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">Weekday + Weekend</strong> batches 6AM–9PM</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">Class recordings</strong> available after every session</span></li>
+          </ul>
+        </div>
+
+        <!-- Right: Batch tiers -->
+        <div class="p-8 lg:p-10">
+          <p class="text-xs font-bold uppercase tracking-widest text-ink-400 mb-5">Select Your Target</p>
+          <div class="space-y-3">
+            <div class="glass rounded-xl p-4 flex items-center justify-between hover:border-brand-500/30 transition-colors cursor-pointer">
+              <div>
+                <p class="text-sm font-semibold text-white">6-Series</p>
+                <p class="text-xs text-ink-400 mt-0.5">Target: 60+ Percentile</p>
+              </div>
+              <span class="text-xs text-brand-400 font-semibold">Beginner</span>
+            </div>
+            <div class="glass rounded-xl p-4 flex items-center justify-between hover:border-brand-500/30 transition-colors cursor-pointer">
+              <div>
+                <p class="text-sm font-semibold text-white">7-Series</p>
+                <p class="text-xs text-ink-400 mt-0.5">Target: 70+ Percentile</p>
+              </div>
+              <span class="text-xs text-brand-400 font-semibold">Foundation</span>
+            </div>
+            <div class="glass rounded-xl p-4 flex items-center justify-between hover:border-brand-500/30 transition-colors cursor-pointer">
+              <div>
+                <p class="text-sm font-semibold text-white">8-Series</p>
+                <p class="text-xs text-ink-400 mt-0.5">Target: 80+ Percentile</p>
+              </div>
+              <span class="text-xs text-brand-400 font-semibold">Intermediate</span>
+            </div>
+            <div class="glass rounded-xl p-4 flex items-center justify-between hover:border-brand-500/30 transition-colors cursor-pointer">
+              <div>
+                <p class="text-sm font-semibold text-white">9-Series</p>
+                <p class="text-xs text-ink-400 mt-0.5">Target: 90+ Percentile</p>
+              </div>
+              <span class="text-xs text-brand-400 font-semibold">Advanced</span>
+            </div>
+            <div class="rounded-xl p-4 flex items-center justify-between border border-brand-500/40 bg-brand-500/08 cursor-pointer">
+              <div>
+                <p class="text-sm font-semibold text-white">10-Series (Apex)</p>
+                <p class="text-xs text-ink-400 mt-0.5">Target: 96+ Percentile</p>
+              </div>
+              <span class="text-xs text-brand-400 font-bold">⚡ Elite</span>
+            </div>
+          </div>
+          <p class="text-xs text-ink-400 mt-4 leading-relaxed">Batch assigned after Entrance Mapping Test. Max 25 students per batch.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── GMAT ─── -->
+    <div id="gmat-section" class="course-card glass rounded-3xl p-0 overflow-hidden mb-8">
+      <div class="top-bar"></div>
+      <div class="grid lg:grid-cols-3 gap-0">
+
+        <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-white/06 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-500/12 flex items-center justify-center text-3xl mb-6">🌍</div>
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span class="badge bg-brand-500/15 text-brand-400 border border-brand-500/20">GMAT Focus</span>
+              <span class="badge bg-blue-500/10 text-blue-400 border border-blue-500/20">720+ Guarantee</span>
+            </div>
+            <h3 class="font-display text-3xl font-extrabold text-white mb-3">GMAT Focus<br/>Edition</h3>
+            <p class="text-ink-300 text-sm leading-relaxed">Crack the GMAT and target Harvard, Wharton, INSEAD, ISB, and 6,000+ global MBA programs. Free MBA admission consulting included with every seat.</p>
+          </div>
+          <div class="mt-8 space-y-3">
+            <div class="flex items-baseline gap-2">
+              <span class="font-display text-4xl font-extrabold text-white">₹34,999</span>
+              <span class="text-ink-400 text-sm">/ course cycle</span>
+            </div>
+            <p class="text-xs text-ink-400">2-month cycle · Lifetime validity · Free admission consulting</p>
+            <a href="https://www.edushastra.com/gmat-preparation/" class="cta-glow block text-center bg-brand-500 hover:bg-brand-600 text-white font-semibold px-6 py-3.5 rounded-xl transition-all duration-300 text-sm mt-4">
+              Enroll in GMAT →
+            </a>
+            <a href="https://www.edushastra.com/gmat-preparation/" class="block text-center text-ink-400 hover:text-brand-400 text-xs transition-colors mt-1">View Full Course Details</a>
+          </div>
+        </div>
+
+        <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-white/06">
+          <p class="text-xs font-bold uppercase tracking-widest text-ink-400 mb-5">What's Included</p>
+          <ul class="space-y-4">
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">82+ hours</strong> expert program</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">11+ adaptive</strong> full-length practice tests</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">Free MBA</strong> admission consulting</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">Visa &amp; scholarship</strong> counseling</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">Verbal-only</strong> or Quant-only custom programs</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">GMAT 790</strong> faculty · IAS · IIM · IIT alumni</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">Audio, video &amp; chat</strong> interaction modes</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">Extreme flexibility</strong> in batch timing &amp; session days</span></li>
+          </ul>
+        </div>
+
+        <div class="p-8 lg:p-10">
+          <p class="text-xs font-bold uppercase tracking-widest text-ink-400 mb-5">Target Schools</p>
+          <div class="grid grid-cols-2 gap-3 mb-6">
+            {['IIM Ahmedabad','ISB Hyderabad','Harvard Business School','Wharton','INSEAD','London Business School','XLRI Jamshedpur','MDI Gurgaon'].map(s => (
+              <div class="glass rounded-xl px-3 py-2.5 text-xs text-ink-200 hover:text-white hover:border-brand-500/30 transition-all">{s}</div>
+            ))}
+          </div>
+          <div class="glass rounded-xl p-4 border border-brand-500/20 bg-brand-500/05">
+            <p class="text-brand-400 text-xs font-bold uppercase tracking-wider mb-2">Apex-25 GMAT Batch</p>
+            <p class="text-xs text-ink-300 leading-relaxed">Elite batch with IQ-based Entrance Mapping Test. 25 students. Percentile-based peer groups. 250+ hrs per cycle.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── GMCAT ─── -->
+    <div id="gmcat-section" class="course-card glass rounded-3xl p-0 overflow-hidden mb-8 border border-brand-500/20">
+      <div class="top-bar" style="opacity:1"></div>
+      <!-- Featured badge -->
+      <div class="px-8 pt-6 pb-0">
+        <span class="badge bg-brand-500 text-white border-0 text-xs">⚡ Most Popular — Best Value</span>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-0 mt-0">
+
+        <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-white/06 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-500/12 flex items-center justify-center text-3xl mb-6">⚡</div>
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span class="badge bg-brand-500/15 text-brand-400 border border-brand-500/20">GMCAT</span>
+              <span class="badge bg-purple-500/10 text-purple-300 border border-purple-500/20">Dual Target</span>
+            </div>
+            <h3 class="font-display text-3xl font-extrabold text-white mb-3">GMAT + CAT<br/>Combined</h3>
+            <p class="text-ink-300 text-sm leading-relaxed">In mathematical language, GMCAT = GMAT + CAT. Same syllabus, two outcomes: domestic IIMs and global top B-schools. One fee, double value.</p>
+          </div>
+          <div class="mt-8 space-y-3">
+            <div class="flex items-baseline gap-2">
+              <span class="font-display text-4xl font-extrabold text-white">₹34,999</span>
+              <span class="text-ink-400 text-sm">/ course cycle</span>
+            </div>
+            <p class="text-xs text-ink-400">5-month cycle · Lifetime validity · Best value course</p>
+            <a href="https://www.edushastra.com/gmat-cat-coaching/" class="cta-glow block text-center bg-brand-500 hover:bg-brand-600 text-white font-semibold px-6 py-3.5 rounded-xl transition-all duration-300 text-sm mt-4">
+              Enroll in GMCAT →
+            </a>
+            <a href="https://www.edushastra.com/gmat-cat-coaching/" class="block text-center text-ink-400 hover:text-brand-400 text-xs transition-colors mt-1">View Full Course Details</a>
+          </div>
+        </div>
+
+        <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-white/06">
+          <p class="text-xs font-bold uppercase tracking-widest text-ink-400 mb-5">Why GMCAT Works</p>
+          <ul class="space-y-4">
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200">GMAT helps CAT students in <strong class="text-white">Verbal section</strong></span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200">CAT helps GMAT students in <strong class="text-white">Quant section</strong></span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">250+ hours</strong> comprehensive program</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200">Targets <strong class="text-white">domestic + global</strong> B-schools simultaneously</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200">Panel of <strong class="text-white">8–9 expert faculty</strong> per batch</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">Free XAT, SNAP, IIFT, NMAT</strong> prep bundled</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200">Free <strong class="text-white">MBA admission consulting</strong> included</span></li>
+          </ul>
+        </div>
+
+        <div class="p-8 lg:p-10">
+          <p class="text-xs font-bold uppercase tracking-widest text-ink-400 mb-5">Student Voice</p>
+          <div class="space-y-4">
+            {[
+              { q:'"GMCAT is a best fit for both GMAT and CAT. Most students today are targeting domestic and overseas B-schools simultaneously."', a:'GMCAT Student · IIM Bangalore' },
+              { q:'"Competency-based batch segregation gives meaningful competition. You compete with a homogenous peer group."', a:'GMCAT Student · ISB Hyderabad' },
+              { q:'"Testing Phase is rigorous but makes the real test a cakewalk. GMAT variance ±30–40 pts, CAT variance ±5–7 %ile."', a:'GMCAT Student · Harvard MBA' },
+            ].map(t => (
+              <div class="glass rounded-xl p-4">
+                <p class="text-xs text-ink-200 leading-relaxed italic mb-2">{t.q}</p>
+                <p class="text-xs text-brand-400 font-semibold">{t.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CUET ─── -->
+    <div id="cuet-section" class="course-card glass rounded-3xl p-0 overflow-hidden mb-8">
+      <div class="top-bar"></div>
+      <div class="grid lg:grid-cols-3 gap-0">
+        <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-white/06 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-500/12 flex items-center justify-center text-3xl mb-6">🏛️</div>
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span class="badge bg-brand-500/15 text-brand-400 border border-brand-500/20">CUET UG 2026</span>
+              <span class="badge bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">96%ile Guarantee</span>
+            </div>
+            <h3 class="font-display text-3xl font-extrabold text-white mb-3">Common University<br/>Entrance Test</h3>
+            <p class="text-ink-300 text-sm leading-relaxed">Target Delhi University, JNU, BHU, Central Universities across India. Hybrid online + classroom model synced with 12th Board prep.</p>
+          </div>
+          <div class="mt-8 space-y-3">
+            <div class="flex items-baseline gap-2">
+              <span class="font-display text-4xl font-extrabold text-white">₹24,999</span>
+              <span class="text-ink-400 text-sm">/ course cycle</span>
+            </div>
+            <p class="text-xs text-ink-400">Lifetime validity · Board + CUET sync · Free counseling</p>
+            <a href="https://www.edushastra.com/new-elite-plus/" class="cta-glow block text-center bg-brand-500 hover:bg-brand-600 text-white font-semibold px-6 py-3.5 rounded-xl transition-all duration-300 text-sm mt-4">
+              Enroll in CUET UG →
+            </a>
+            <a href="https://www.edushastra.com/new-elite-plus/" class="block text-center text-ink-400 hover:text-brand-400 text-xs transition-colors mt-1">View Full Course Details</a>
+          </div>
+        </div>
+
+        <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-white/06">
+          <p class="text-xs font-bold uppercase tracking-widest text-ink-400 mb-5">What's Included</p>
+          <ul class="space-y-4">
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200">All <strong class="text-white">27 domain subjects</strong> covered</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">Hybrid model</strong> — online + classroom</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200">12th Board + CUET <strong class="text-white">synchronized</strong> prep</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200">Free <strong class="text-white">admission counseling</strong> for Central Universities</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">Weekly tests</strong> with mailed performance reports</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200">Ability-based batches by<strong class="text-white"> IQ Mapping Test</strong></span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200">Recorded classes &amp;<strong class="text-white"> offline comfortable</strong> classroom</span></li>
+          </ul>
+        </div>
+
+        <div class="p-8 lg:p-10">
+          <p class="text-xs font-bold uppercase tracking-widest text-ink-400 mb-5">Target Universities</p>
+          <div class="grid grid-cols-1 gap-2 mb-6">
+            {['Delhi University (DU)','Jawaharlal Nehru University (JNU)','Banaras Hindu University (BHU)','Aligarh Muslim University (AMU)','Jamia Millia Islamia','Central University of Rajasthan','Hyderabad Central University','All 44+ Central Universities'].map(u => (
+              <div class="flex items-center gap-2 text-xs text-ink-300 py-1.5 border-b border-white/04">
+                <span class="text-brand-500">→</span>
+                <span>{u}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── SAT ─── -->
+    <div id="sat-section" class="course-card glass rounded-3xl p-0 overflow-hidden mb-8">
+      <div class="top-bar"></div>
+      <div class="grid lg:grid-cols-3 gap-0">
+        <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-white/06 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-500/12 flex items-center justify-center text-3xl mb-6">🎓</div>
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span class="badge bg-brand-500/15 text-brand-400 border border-brand-500/20">Digital SAT</span>
+              <span class="badge bg-teal-500/10 text-teal-400 border border-teal-500/20">1520+ Guarantee</span>
+            </div>
+            <h3 class="font-display text-3xl font-extrabold text-white mb-3">Digital SAT<br/>Preparation</h3>
+            <p class="text-ink-300 text-sm leading-relaxed">Target top US universities, Ivy League schools, and global undergrad programs. Free admission counseling and scholarship guidance included.</p>
+          </div>
+          <div class="mt-8 space-y-3">
+            <a href="https://www.edushastra.com/contact-us/" class="cta-glow block text-center bg-brand-500 hover:bg-brand-600 text-white font-semibold px-6 py-3.5 rounded-xl transition-all duration-300 text-sm">
+              Enquire for SAT →
+            </a>
+            <a href="https://www.edushastra.com/contact-us/" class="block text-center text-ink-400 hover:text-brand-400 text-xs transition-colors mt-1">View Full Course Details</a>
+          </div>
+        </div>
+
+        <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-white/06">
+          <p class="text-xs font-bold uppercase tracking-widest text-ink-400 mb-5">What's Included</p>
+          <ul class="space-y-4">
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">Digital SAT</strong> format mastery (adaptive)</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200">Free <strong class="text-white">US college admission</strong> counseling</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">Scholarship guidance</strong> for merit-based aid</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">Ability-based</strong> batch (IQ Mapping Test)</span></li>
+            <li class="feat"><div class="feat-icon"><svg class="w-3 h-3 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path stroke-linecap="round" stroke-linejoin="round" d="M10 3L5 8.5 2 5.5"/></svg></div><span class="text-sm text-ink-200"><strong class="text-white">Visa counseling</strong> for US/UK/Canada</span></li>
+          </ul>
+        </div>
+
+        <div class="p-8 lg:p-10">
+          <p class="text-xs font-bold uppercase tracking-widest text-ink-400 mb-5">Target Schools</p>
+          <div class="grid grid-cols-1 gap-2">
+            {['Harvard University','MIT','Stanford University','Yale University','Columbia University','University of Chicago','Duke University','NYU Stern'].map(u => (
+              <div class="flex items-center gap-2 text-xs text-ink-300 py-1.5 border-b border-white/04">
+                <span class="text-brand-500">→</span>{u}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     THE 4-PHASE MODEL
+══════════════════════════════════════ -->
+<section class="py-24 px-6 bg-ink-800/25">
+  <div class="max-w-7xl mx-auto">
+    <div class="reveal mb-14 text-center">
+      <p class="text-brand-400 text-xs font-bold tracking-widest uppercase mb-3">The EduShastra Method</p>
+      <h2 class="font-display text-4xl md:text-5xl font-extrabold text-white">The 4-Phase<br/><span class="text-brand-500">Ability-Based Model</span></h2>
+      <p class="text-ink-300 mt-4 max-w-2xl mx-auto text-sm leading-relaxed">Not time-based. Not batch-based. Your course ends when you reach your optimal ability level — not when a calendar says so. This is what separates EduShastra from every mass-coaching factory.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger reveal">
+      <div class="glass rounded-3xl p-7">
+        <div class="w-11 h-11 rounded-full bg-brand-500/12 border border-brand-500/25 flex items-center justify-center font-display font-extrabold text-brand-400 text-base mb-5">01</div>
+        <h3 class="font-display text-lg font-bold text-white mb-2">Mapping Phase</h3>
+        <p class="text-xs text-ink-300 leading-relaxed mb-3">IQ-focused Entrance Mapping Test profiles every student. Ability is measured, not assumed. Takes 10% of total course time.</p>
+        <span class="text-xs text-brand-400 font-semibold">One-on-One Stage</span>
+      </div>
+      <div class="glass rounded-3xl p-7">
+        <div class="w-11 h-11 rounded-full bg-brand-500/12 border border-brand-500/25 flex items-center justify-center font-display font-extrabold text-brand-400 text-base mb-5">02</div>
+        <h3 class="font-display text-lg font-bold text-white mb-2">Foundation Phase</h3>
+        <p class="text-xs text-ink-300 leading-relaxed mb-3">All sections covered from first principles. Adaptive content delivery based on your Mapping Test result. 20–50% of course time.</p>
+        <span class="text-xs text-brand-400 font-semibold">Batch Stage</span>
+      </div>
+      <div class="glass rounded-3xl p-7">
+        <div class="w-11 h-11 rounded-full bg-brand-500/12 border border-brand-500/25 flex items-center justify-center font-display font-extrabold text-brand-400 text-base mb-5">03</div>
+        <h3 class="font-display text-lg font-bold text-white mb-2">Testing Phase</h3>
+        <p class="text-xs text-ink-300 leading-relaxed mb-3">Computer Adaptive Tests, CBTs, Paper Based Tests. No test limit — each course has a minimum test commitment. Rigorous but makes the real exam easy.</p>
+        <span class="text-xs text-brand-400 font-semibold">One-on-One Stage</span>
+      </div>
+      <div class="glass rounded-3xl p-7">
+        <div class="w-11 h-11 rounded-full bg-brand-500/12 border border-brand-500/25 flex items-center justify-center font-display font-extrabold text-brand-400 text-base mb-5">04</div>
+        <h3 class="font-display text-lg font-bold text-white mb-2">Control Phase</h3>
+        <p class="text-xs text-ink-300 leading-relaxed mb-3">Final gap analysis and targeted remediation. Course repeats until the student reaches their optimal level. Lifetime validity ensures no one is left behind.</p>
+        <span class="text-xs text-brand-400 font-semibold">One-on-One Stage</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     COMPARISON TABLE
+══════════════════════════════════════ -->
+<section id="compare" class="py-24 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="reveal mb-14 text-center">
+      <p class="text-brand-400 text-xs font-bold tracking-widest uppercase mb-3">Side-by-Side</p>
+      <h2 class="font-display text-4xl md:text-5xl font-extrabold text-white">Compare <span class="text-brand-500">All Courses</span></h2>
+    </div>
+
+    <div class="reveal glass rounded-3xl overflow-hidden">
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-white/08">
+              <th class="text-left p-5 text-ink-400 text-xs font-bold uppercase tracking-wider w-44">Feature</th>
+              <th class="p-5 text-center font-display font-bold text-white">CAT 2026</th>
+              <th class="p-5 text-center font-display font-bold text-white">GMAT Focus</th>
+              <th class="p-5 text-center font-display font-bold text-white bg-brand-500/05">GMCAT ⚡</th>
+              <th class="p-5 text-center font-display font-bold text-white">CUET UG</th>
+              <th class="p-5 text-center font-display font-bold text-white">SAT</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ['Score Guarantee',      '99%ile',    '720+',     '99%ile + 720+', '96%ile',  '1520+'],
+              ['Course Fee',           '₹24,999',   '₹34,999',  '₹34,999',       '₹24,999', 'Enquire'],
+              ['Hours / Cycle',        '160+',      '82+',      '250+',          '160+',    '80+'],
+              ['Cycle Duration',       '3.5 months','2 months', '5 months',      '3 months','2 months'],
+              ['Lifetime Validity',    '✅',         '✅',        '✅',             '✅',       '✅'],
+              ['Mock Tests',           '21+ CAT',   '11+ GMAT', 'Both',          'Weekly',  '10+'],
+              ['Batch Size (max)',      '25',        '25',       '25',            '25',      '25'],
+              ['Free Admission Help',  '✅ IIM',     '✅ Global', '✅ Both',        '✅ CUs',  '✅ US/UK'],
+              ['Free Bundled Exams',   'XAT/SNAP+', '—',        'XAT/SNAP+',     '—',       '—'],
+              ['24×7 Doubt Solving',   '✅',         '✅',        '✅',             '✅',       '✅'],
+            ].map((row, i) => (
+              <tr class={`cmp-row border-b border-white/04 ${i % 2 === 0 ? '' : 'bg-white/02'}`}>
+                <td class="p-5 text-ink-400 font-medium text-xs">{row[0]}</td>
+                <td class="p-5 text-center text-xs text-white">{row[1]}</td>
+                <td class="p-5 text-center text-xs text-white">{row[2]}</td>
+                <td class="p-5 text-center text-xs text-brand-400 font-semibold bg-brand-500/03">{row[3]}</td>
+                <td class="p-5 text-center text-xs text-white">{row[4]}</td>
+                <td class="p-5 text-center text-xs text-white">{row[5]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     ENROLLMENT PROCESS
+══════════════════════════════════════ -->
+<section id="enroll" class="py-24 px-6 bg-ink-800/25">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="reveal mb-14">
+      <p class="text-brand-400 text-xs font-bold tracking-widest uppercase mb-3">How to Join</p>
+      <h2 class="font-display text-4xl font-extrabold text-white">Enrollment in<br/><span class="text-brand-500">3 Simple Steps</span></h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 mb-12 stagger reveal">
+      <div class="glass rounded-3xl p-8 text-left">
+        <div class="w-12 h-12 rounded-2xl bg-brand-500/12 border border-brand-500/25 flex items-center justify-center font-display font-extrabold text-brand-400 text-xl mb-6">1</div>
+        <h3 class="font-display text-xl font-bold text-white mb-2">Pay Course Fee</h3>
+        <p class="text-ink-300 text-sm leading-relaxed">Choose your course and complete payment online at edushastra.com</p>
+      </div>
+      <div class="glass rounded-3xl p-8 text-left border border-brand-500/20">
+        <div class="w-12 h-12 rounded-2xl bg-brand-500/15 border border-brand-500/30 flex items-center justify-center font-display font-extrabold text-brand-400 text-xl mb-6">2</div>
+        <h3 class="font-display text-xl font-bold text-white mb-2">Share Your Details</h3>
+        <p class="text-ink-300 text-sm leading-relaxed">Email <a href="mailto:contact@edushastra.com" class="text-brand-400 hover:underline">contact@edushastra.com</a> — Name, Email, Phone &amp; Course</p>
+      </div>
+      <div class="glass rounded-3xl p-8 text-left">
+        <div class="w-12 h-12 rounded-2xl bg-brand-500/12 border border-brand-500/25 flex items-center justify-center font-display font-extrabold text-brand-400 text-xl mb-6">3</div>
+        <h3 class="font-display text-xl font-bold text-white mb-2">Take Mapping Test</h3>
+        <p class="text-ink-300 text-sm leading-relaxed">Complete the IQ-based Entrance Mapping Test → get placed in your optimal batch → classes begin</p>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="https://www.edushastra.com/cat-preparation/" class="cta-glow bg-brand-500 hover:bg-brand-600 text-white font-semibold px-10 py-4 rounded-full transition-all duration-300 text-base">
+        Choose a Course →
+      </a>
+      <a href="https://www.edushastra.com/contact-us/" class="glass glass-hover text-white font-semibold px-10 py-4 rounded-full transition-all duration-300 text-base">
+        Talk to an Advisor
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FAQ
+══════════════════════════════════════ -->
+<section class="py-24 px-6">
+  <div class="max-w-3xl mx-auto">
+    <div class="reveal mb-12 text-center">
+      <p class="text-brand-400 text-xs font-bold tracking-widest uppercase mb-3">Got Questions?</p>
+      <h2 class="font-display text-4xl font-extrabold text-white">Frequently Asked</h2>
+    </div>
+
+    <div id="faqList" class="space-y-3 reveal">
+      {[
+        { q:'What is the Ability-Based Model?', a:'Unlike time-based courses that end after a fixed duration, EduShastra\'s course ends when you reach your optimal level. Cycles repeat until you hit your target percentile. All courses have lifetime validity.' },
+        { q:'What happens if I don\'t hit my guaranteed percentile?', a:'You get a full refund — no questions asked. Every course is backed by our money-back promise. CAT 99%ile, GMAT 720+, CUET 96%ile, SAT 1520+.' },
+        { q:'How does the Entrance Mapping Test work?', a:'After payment, you receive an IQ-focused Mapping Test. Based on performance, you\'re placed in one of 5 percentile groups (6, 7, 8, 9, 10-series). This ensures you compete with a homogenous peer group for meaningful competition.' },
+        { q:'What is the maximum batch size?', a:'25 students per batch. This is a hard cap — not a marketing claim. Small batch sizes allow personalized one-on-one attention that mass coaching factories cannot offer.' },
+        { q:'Can I do both GMAT and CAT simultaneously?', a:'Yes! GMCAT is our signature combined course. GMAT preparation strengthens CAT Verbal, and CAT preparation strengthens GMAT Quant. Both exams share the same core syllabus.' },
+        { q:'Are classes online or offline?', a:'Both. Hybrid model — Live Online via Zoom/Blackboard, Classroom centers in Delhi/NCR, Home-group classes, and 1-on-1 tutoring. All classes are recorded and available after every session.' },
+        { q:'What batch timings are available?', a:'Weekday and Weekend batches. First batch at 6:00 AM, last batch at 9:00 PM. Extreme flexibility in timing and session days.' },
+      ].map((f, i) => (
+        <div class="glass rounded-2xl overflow-hidden faq-item">
+          <button class="w-full flex items-center justify-between p-5 text-left faq-trigger" onclick="toggleFaq(this)">
+            <span class="font-semibold text-white text-sm pr-4">{f.q}</span>
+            <span class="faq-icon text-brand-400 text-xl font-light flex-shrink-0 transition-transform duration-300">+</span>
+          </button>
+          <div class="faq-body hidden px-5 pb-5">
+            <p class="text-ink-300 text-sm leading-relaxed">{f.a}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FOOTER CTA BAND
+══════════════════════════════════════ -->
+<section class="py-16 px-6 border-t border-white/06 bg-brand-500/05">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="font-display text-3xl md:text-4xl font-extrabold text-white mb-4">
+      Ready to start? <span class="text-brand-500">Pick your course.</span>
+    </h2>
+    <p class="text-ink-300 mb-8 text-sm">Not sure which course is right for you? Talk to an advisor — free, no pressure.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#courses-grid" class="cta-glow bg-brand-500 hover:bg-brand-600 text-white font-semibold px-9 py-4 rounded-full transition-all duration-300">View All Courses ↑</a>
+      <a href="https://www.edushastra.com/contact-us/" class="glass glass-hover text-white font-semibold px-9 py-4 rounded-full transition-all duration-300">Free Counseling Session</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer class="border-t border-white/06 bg-ink-900 pt-14 pb-8 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-4 gap-10 mb-10">
+      <div class="space-y-4">
+        <p class="font-display text-2xl font-extrabold text-white">Edu<span class="text-brand-500">Shastra</span></p>
+        <p class="text-ink-400 text-xs leading-relaxed">Affordable Quality Education for All. For People, Not Profits. Since 2016.</p>
+      </div>
+      <div class="space-y-3">
+        <p class="text-xs font-bold uppercase tracking-widest text-ink-400">Courses</p>
+        <ul class="space-y-2 text-xs text-ink-400">
+          <li><a href="https://www.edushastra.com/cat-preparation/" class="hover:text-brand-400 transition-colors">CAT 2026</a></li>
+          <li><a href="https://www.edushastra.com/gmat-preparation/" class="hover:text-brand-400 transition-colors">GMAT Focus Edition</a></li>
+          <li><a href="https://www.edushastra.com/gmat-cat-coaching/" class="hover:text-brand-400 transition-colors">GMCAT (Combined)</a></li>
+          <li><a href="https://www.edushastra.com/new-elite-plus/" class="hover:text-brand-400 transition-colors">CUET UG</a></li>
+          <li><a href="https://www.edushastra.com/contact-us/" class="hover:text-brand-400 transition-colors">Digital SAT</a></li>
+        </ul>
+      </div>
+      <div class="space-y-3">
+        <p class="text-xs font-bold uppercase tracking-widest text-ink-400">Company</p>
+        <ul class="space-y-2 text-xs text-ink-400">
+          <li><a href="/" class="hover:text-brand-400 transition-colors">Home</a></li>
+          <li><a href="https://www.edushastra.com/about-us/" class="hover:text-brand-400 transition-colors">About Us</a></li>
+          <li><a href="https://www.edushastra.com/faqs/" class="hover:text-brand-400 transition-colors">FAQs</a></li>
+          <li><a href="https://www.edushastra.com/login/" class="hover:text-brand-400 transition-colors">Student Login</a></li>
+        </ul>
+      </div>
+      <div class="space-y-3">
+        <p class="text-xs font-bold uppercase tracking-widest text-ink-400">Contact</p>
+        <ul class="space-y-2 text-xs text-ink-400">
+          <li><a href="mailto:contact@edushastra.com" class="hover:text-brand-400 transition-colors">contact@edushastra.com</a></li>
+          <li class="leading-relaxed">Office No. 628, 3rd Floor, Block B1,<br/>Janakpuri, New Delhi – 110058</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/06 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-ink-400 text-xs">
+      <p>© 2026 EduShastra Education Solutions Pvt. Ltd. All rights reserved.</p>
+      <p>"Education for All" · A Subsidiary of EduShastra Group</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════ -->
+<script>
+  // ── Navbar scroll ──
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    nav.style.background = window.scrollY > 40 ? 'rgba(13,13,13,0.96)' : 'rgba(13,13,13,0.85)';
+  });
+
+  // ── Mobile menu ──
+  document.getElementById('menuBtn').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+
+  // ── Scroll reveal ──
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('revealed'), i * 60);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // ── FAQ accordion ──
+  function toggleFaq(btn) {
+    const body = btn.nextElementSibling;
+    const icon = btn.querySelector('.faq-icon');
+    const isOpen = !body.classList.contains('hidden');
+
+    // Close all
+    document.querySelectorAll('.faq-body').forEach(b => b.classList.add('hidden'));
+    document.querySelectorAll('.faq-icon').forEach(ic => { ic.textContent = '+'; ic.style.transform = 'rotate(0deg)'; });
+
+    if (!isOpen) {
+      body.classList.remove('hidden');
+      icon.textContent = '×';
+      icon.style.transform = 'rotate(90deg)';
+    }
+  }
+
+  // ── Active tab highlight on scroll ──
+  const sections = ['cat-section','gmat-section','gmcat-section','cuet-section','sat-section'];
+  const tabLinks = document.querySelectorAll('.tab-btn');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && window.scrollY >= el.offsetTop - 140) current = id;
+    });
+    tabLinks.forEach(a => {
+      const href = a.getAttribute('href').replace('#','');
+      a.classList.toggle('active', href === current);
+    });
+  });
+</script>
+
+</body>
+</html>
