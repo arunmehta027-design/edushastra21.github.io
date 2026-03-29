@@ -1,0 +1,1874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CUET 2026 & 2027 | Common Universities Entrance Test | EduShastra</title>
+<meta name="description" content="Join CUET 2026 preparation with EduShastra. IQ-based batch segregation, personalized mentoring & adaptive 4-phase prep. Free courses available.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --primary: #005af0;
+    --danger: #dc3545;
+    --dark-blue: #002147;
+    --gold: #DAA520;
+    --text: #333;
+    --border: #dee2e6;
+    --bg-light: #f5f5f5;
+  }
+  body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    line-height: 1.6;
+    background: #fff;
+  }
+  a { color: #222; text-decoration: none; }
+  a:hover { color: #000; }
+  h1, h2, h3, h4, h5 { line-height: 1.4; margin-bottom: 0.75em; }
+  h2 { color: var(--primary); font-size: 1.375rem; font-weight: 500; }
+  h3 { font-size: 1.125rem; color: #333; font-weight: 300; }
+  h4 { font-size: 1rem; font-weight: 800; color: #333; }
+  p { margin-bottom: 1em; }
+  ol, ul { padding-left: 1.5rem; margin-bottom: 1em; }
+  li { margin-bottom: 6px; }
+  img { max-width: 100%; height: auto; display: block; }
+  .container { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 15px; }
+  .container-fluid { width: 100%; padding: 0 15px; }
+  .row { display: flex; flex-wrap: wrap; margin: 0 -15px; }
+  [class^="col-"] { padding: 0 15px; width: 100%; }
+  .col-md-3 { flex: 0 0 25%; max-width: 25%; }
+  .col-md-4 { flex: 0 0 33.333%; max-width: 33.333%; }
+  .col-md-5 { flex: 0 0 41.666%; max-width: 41.666%; }
+  .col-md-6 { flex: 0 0 50%; max-width: 50%; }
+  .col-md-7 { flex: 0 0 58.333%; max-width: 58.333%; }
+  .col-md-12 { flex: 0 0 100%; max-width: 100%; }
+  .col-lg-3 { flex: 0 0 25%; max-width: 25%; }
+  .col-sm-6 { flex: 0 0 50%; max-width: 50%; }
+  .mb-1 { margin-bottom: 0.25rem !important; }
+  .mb-2 { margin-bottom: 0.5rem !important; }
+  .mb-3 { margin-bottom: 1rem !important; }
+  .mb-30 { margin-bottom: 30px; }
+  .mt-0 { margin-top: 0; }
+  .me-3 { margin-right: 1rem; }
+  .ms-1 { margin-left: 0.25rem; }
+  .ms-2 { margin-left: 0.5rem; }
+  .mr-3 { margin-right: 1rem; }
+  .pl-3 { padding-left: 1rem; }
+  .px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+  .py-3 { padding-top: 1rem; padding-bottom: 1rem; }
+  .pb-0 { padding-bottom: 0; }
+  .pb-3 { padding-bottom: 1rem; }
+  .pt-8 { padding-top: 8px; }
+  .p-0 { padding: 0; }
+  .text-center { text-align: center; }
+  .text-left { text-align: left; }
+  .text-right { text-align: right; }
+  .text-white { color: #fff !important; }
+  .text-danger { color: var(--danger) !important; }
+  .text-decoration-line-through { text-decoration: line-through; font-weight: 400; color: grey; font-size: 14px; }
+  .font-weight-bold { font-weight: 700; }
+  .d-flex { display: flex; }
+  .d-block { display: block; }
+  .d-inline-block { display: inline-block; }
+  .flex-grow-1 { flex-grow: 1; }
+  .flex-shrink-0 { flex-shrink: 0; }
+  .align-items-center { align-items: center; }
+  .justify-content-center { justify-content: center; }
+  .justify-content-between { justify-content: space-between; }
+  .w-100 { width: 100%; }
+  .position-relative { position: relative; }
+  .shadow-sm { box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075); }
+  .font-13 { font-size: 13px; }
+  .font-20 { font-weight: 700; color: #0b3f80; margin-top: 10px; font-size: 20px; line-height: 23px; margin-bottom: 10px; }
+  .border { border: 1px solid #dee2e6; }
+  .border-bottom { border-bottom: 1px solid #dee2e6; }
+  .border-danger { border: 1px solid var(--danger); }
+
+  /* Navigation */
+  .navigation-top {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 0.1rem 0.1rem rgba(0,0,0,.15);
+    height: 58px;
+    display: flex;
+    align-items: center;
+  }
+  .navigation-top .container-fluid { display: flex; align-items: center; justify-content: space-between; max-width: 100%; }
+  .custom-logo-link { display: inline-block; }
+  .custom-logo-link img { height: 40px; width: auto; }
+  .nav-links { display: flex; gap: 12px; align-items: center; }
+  .nav-links a { font-size: 13px; font-weight: 600; color: #222; padding: 0 6px; }
+  .nav-links a:hover { color: var(--danger); }
+  .try-btn-nav {
+    background-color: #e6c84a;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #000;
+    border: 1px solid #d49a13;
+  }
+  .menu-toggle-btn { display: none; cursor: pointer; background: none; border: 1px solid #ccc; padding: 6px 10px; border-radius: 4px; }
+
+  /* Hero Section */
+  .hero-section { background: #fff; padding: 30px 20px; text-align: center; }
+  .hero-section .gold-title { color: var(--gold); font-size: clamp(30px, 5vw, 52px); font-weight: 700; margin: 5px 0;}
+  .hero-section .main-title { color: #000; font-size: clamp(22px, 3.5vw, 42px); font-weight: 700; margin: 5px 0; }
+  .hero-section .sub-title { color: #000; font-size: clamp(16px, 2vw, 22px); font-weight: 400; margin: 5px 0; }
+  .hero-section .refund-title { color: var(--gold); font-size: clamp(16px, 2vw, 22px); font-weight: 700; margin: 5px 0; }
+
+  /* Video Slider */
+  .image-slider-container { width: 100%; overflow: hidden; background: #f5f5f5; padding: 20px 0; }
+  .image-slider { width: 100%; overflow: hidden; }
+  .slider-track { display: flex; gap: 20px; animation: scroll 30s linear infinite; width: max-content; }
+  .slider-track:hover { animation-play-state: paused; }
+  .slide { flex-shrink: 0; width: 380px; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,.08); border: 1px solid #ddd; background: #000; }
+  .slide iframe { width: 100%; height: 213px; display: block; border: 0; }
+  @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+  /* News/Update Block */
+  .news-block { padding: 15px; border: dashed 1px #ddd; margin-bottom: 20px; font-size: 14px; }
+  .news-block ul { margin: 0; padding: 0 0 0 18px; }
+  .news-block ul li { margin-bottom: 15px; }
+
+  /* Quick Nav Cards */
+  .contact-card { background: #fff; padding: 15px; border: 1px solid rgba(0,0,0,.125); border-radius: 0.25rem; margin-bottom: 20px; cursor: pointer; transition: background 0.2s; }
+  .contact-card:hover { background-image: linear-gradient(to bottom,#fff,#f5f5f5); }
+  .contact-card .media { display: flex; align-items: flex-start; gap: 12px; }
+  .contact-card h4 { font-size: 15px; margin-bottom: 4px; font-weight: 600; color: #000; }
+  .contact-card .media-body { font-size: 13px; line-height: 18px; }
+  .contact-card img { width: 44px; height: 44px; flex-shrink: 0; }
+
+  /* Tabs */
+  .tabs-nav { display: flex; border: 1px solid #ccc; border-bottom: 0; }
+  .tab-btn {
+    flex: 1; text-align: center; padding: 14px 10px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;
+    color: #333; font-weight: 700; font-size: 13px; background: #f5f5f5; cursor: pointer;
+    border-right: 1px solid #ddd; transition: all 0.2s;
+  }
+  .tab-btn:first-child { border-left: 0; }
+  .tab-btn.active { border-bottom: 2px solid var(--danger); color: var(--danger); background: #fff; padding-bottom: 12px; }
+  .tab-panel { display: none; padding: 20px 0; }
+  .tab-panel.active { display: block; }
+
+  /* Page block */
+  .page-block { margin-bottom: 20px; }
+  .page-block h2 { font-size: 1.25rem; color: var(--primary); }
+  .page-block p { text-align: justify; font-size: 16px; margin-bottom: 10px; }
+  .page-block ol { 
+  margin: 10px 0 20px 20px; 
+  list-style: decimal !important;  /* Restores numbers */
+  list-style-type: decimal !important;  /* belt & suspenders */
+  padding-left: 2em !important;         /* increase padding */
+}
+.page-block ul { 
+  margin: 10px 0 20px 20px; 
+  list-style: disc !important;     /* Restores bullets */
+  padding-left: 1.5em !important;
+}
+.page-block ol li, .page-block ul li {
+  display: list-item !important;
+  list-style: decimal !important;
+  list-style-type: decimal !important;  /* set on li directly too */
+  list-style-position: outside !important;
+}
+  .page-block strong { font-weight: 700 !important; }
+
+  /* Table */
+  .table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; background: #fff; }
+  .table th, .table td { padding: 0.75rem; border: 1px solid var(--border); font-size: 14px; }
+  .table thead { background: #343a40; color: #fff; }
+  .table tbody tr:hover { background: rgba(0,0,0,.03); }
+  .table-responsive { overflow-x: auto; }
+
+  /* Buttons */
+  .btn { display: inline-block; padding: 0.375rem 0.75rem; font-size: 1rem; font-weight: 400; text-align: center; cursor: pointer; border: 1px solid transparent; border-radius: 0.25rem; transition: all 0.15s; text-decoration: none; }
+  .btn-primary { color: #fff; background: #064a9f; border-color: #064a9f; }
+  .btn-primary:hover { background: #053d85; color: #fff; }
+  .btn-danger { color: #fff; background: var(--danger); border-color: var(--danger); }
+  .btn-danger:hover { background: #bb2d3b; color: #fff; }
+  .btn-warning { color: #212529; background: #ffc107; border-color: #ffc107; }
+  .btn-warning:hover { background: #e0a800; }
+  .btn-white { color: #000; background: #fff; border-color: #ccc; }
+  .btn-sm { padding: 0.25rem 0.5rem; font-size: 0.875rem; border-radius: 0.2rem; }
+  .btn-group { display: inline-flex; }
+  .btn-group .btn { border-radius: 0; }
+  .btn-group .btn:first-child { border-radius: 0.25rem 0 0 0.25rem; }
+  .btn-group .btn:last-child { border-radius: 0 0.25rem 0.25rem 0; }
+
+  /* Cards */
+  .card { position: relative; background: #fff; border: 1px solid rgba(0,0,0,.125); border-radius: 0.25rem; overflow: hidden; margin-bottom: 30px; width: 100%; }
+  .card-body { padding: 1rem; }
+
+  /* Fee Cards */
+  .new-fees-structure .card { border: 1px solid #dde4ef; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,.08); transition: box-shadow 0.2s; margin-bottom: 0; }
+  .new-fees-structure .card:hover { box-shadow: 0 6px 24px rgba(0,0,0,.14); }
+  .new-fees-structure .card-body { padding: 14px 16px 16px; background: #fff; }
+  .new-fees-structure .col-md-4 { margin-bottom: 30px; }
+
+  /* Header banner */
+  .media-fees-block { background: url(https://www.edushastra.com/wp-content/uploads/2025/01/fees-bg.webp) no-repeat center center; background-size: cover; position: relative; min-height: 120px; display: flex; align-items: center; padding: 14px 14px 14px 52px; overflow: hidden; gap: 12px; }
+  .media-fees-block-apex { background: url(https://www.edushastra.com/wp-content/uploads/2025/12/fees-bg-red.png) no-repeat center center; background-size: cover; position: relative; min-height: 120px; display: flex; align-items: center; padding: 14px 14px 14px 52px; overflow: hidden; gap: 12px; }
+  .media-fees-block > div, .media-fees-block-apex > div { flex: 1; min-width: 0; }
+
+  .font-20 { color: #0052cc; font-size: 1rem; font-weight: 700; line-height: 1.3; margin: 0 0 10px; text-shadow: 0 1px 3px rgba(0,0,0,.25); }
+
+  .media-fees-block .btn-group, .media-fees-block-apex .btn-group { border-radius: 4px; overflow: hidden; border: 1.5px solid rgba(255,255,255,.55); display: inline-flex; }
+  .media-fees-block .btn-group .btn-danger, .media-fees-block-apex .btn-group .btn-danger { background: var(--danger); color: #fff; font-weight: 700; font-size: 0.8rem; padding: 4px 10px; text-decoration: line-through; border: none; border-radius: 0; }
+  .media-fees-block .btn-group .btn-white, .media-fees-block-apex .btn-group .btn-white { background: #fff; color: #0052cc; font-weight: 700; font-size: 0.85rem; padding: 4px 12px; border: none; border-radius: 0; }
+
+  .tutors-thumb { width: 105px; flex-shrink: 0; filter: drop-shadow(0 2px 6px rgba(0,0,0,.3)); position: relative; z-index: 1; }
+
+  .online-badge { background: url('https://www.edushastra.com/wp-content/uploads/2024/12/online.png') no-repeat; display: block; width: 80px; height: 34px; position: absolute; left: -6px; top: 0px; z-index: 1; }
+  .offline-badge { background: url('https://www.edushastra.com/wp-content/uploads/2024/12/offline.png') no-repeat; display: block; width: 80px; height: 34px; position: absolute; left: -6px; top: 0px; z-index: 1; }
+  .hybrid-badge { background: url('https://www.edushastra.com/wp-content/uploads/2024/12/hybrid.png') no-repeat; display: block; width: 80px; height: 34px; position: absolute; left: -6px; top: 0px; z-index: 1; }
+
+  .limited-box { background: #064a9f; color: #fff; padding: 6px 14px; display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; }
+  .limited-box img { width: 24px; height: 24px; flex-shrink: 0; }
+
+  .new-fees-structure .course-details { font-size: 13.5px; font-weight: 700; color: #0b3f80; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+  .new-fees-structure .course-details img { width: 26px; height: 26px; flex-shrink: 0; }
+  .new-fees-structure .course-details h3 { font-size: 13.5px; font-weight: 700; color: #0b3f80; margin: 0; }
+
+  .new-fees-structure .d-flex.mb-2 { gap: 8px; align-items: flex-start; margin-bottom: 10px !important; }
+  .new-fees-structure .d-flex.mb-2 img { width: 22px; height: 22px; flex-shrink: 0; margin-top: 2px; }
+  .new-fees-structure .font-13 { font-size: 12.5px; line-height: 1.55; color: #444; }
+
+  .course-cost { font-size: 16px; font-weight: 700; color: #0052cc; line-height: 1.4; }
+
+  .discount-tag2 { display: flex; align-items: center; background: url('https://www.edushastra.com/wp-content/uploads/2024/12/price-tag.webp') no-repeat; width: 150px; height: 32px; padding-left: 35px; font-size: 11px; color: #0052cc; font-weight: 600; margin-top: 10px; }
+
+  /* Teachers */
+  .teacher-block { text-align: center; box-shadow: 0 1px 1px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24); transition: all 0.3s; padding-top: 20px; }
+  .teacher-block:hover { box-shadow: 0 10px 20px 5px rgba(0,0,0,.05); background: #fff; }
+  .circleimg { border-radius: 100%; width: 160px; margin: 0 auto 15px; }
+  .teacher-block figcaption { text-align: center; border-bottom: 3px solid #0d42eb; padding-bottom: 15px; margin: 10px 0 0; }
+  .teacher-block figcaption:hover { border-bottom-color: var(--danger); }
+  .teacher-block figcaption h4 { font-size: 16px; margin-bottom: 0; font-weight: 500; color: #004e71; }
+  .teacher-block figcaption h5 { font-size: 13px; margin-bottom: 0; }
+  .teacher-block figcaption p { font-size: 12px; color: #999; padding: 0; margin: 4px 0; }
+  .teacher-block .more-button { border: 1px solid #0d42eb; padding: 4px 12px; font-size: 13px; display: inline-block; margin: 6px 0; }
+  .icons-linkedin { display: block; width: 28px; height: 28px; margin: 6px auto; background: url('https://www.edushastra.com/wp-content/uploads/2025/11/edu-sprite_2025.png') no-repeat -4px -259px; text-indent: -9999px; }
+  .card-taecher { margin-bottom: 30px; }
+  .teachers-main-page { background: #f5f5f5; padding: 40px 0; }
+
+  /* Ribbon */
+  .ribbonmain { display: inline-block; position: relative; height: 45px; text-align: center; margin: 30px auto 50px; z-index: 3; width: auto; }
+  .ribbonmain::before { content: ""; position: absolute; width: 55px; bottom: -15px; left: -40px; z-index: -2; border: 20px solid #56adf3; border-left-color: transparent; }
+  .ribbonmain::after { content: ""; position: absolute; width: 55px; bottom: -15px; right: -40px; z-index: -2; border: 20px solid #56adf3; border-right-color: transparent; }
+  .ribbonmain h2 { display: inline-block; margin: 0; line-height: 45px; font-size: 20px; color: #fff; background: #2196f3; font-weight: 500; padding: 0 50px; position: relative; }
+  .ribbonmain h2::before { position: absolute; content: ""; top: 100%; left: 0; border: none; border-bottom: solid 10px transparent; border-right: solid 15px #397eb5; }
+  .ribbonmain h2::after { position: absolute; content: ""; top: 100%; right: 0; border: none; border-bottom: solid 10px transparent; border-left: solid 15px #397eb5; }
+
+  /* City Buttons */
+  .single-courses-category { text-align: center; margin-bottom: 30px; }
+  .single-courses-category a { display: block; background: #fff; border-radius: 5px; box-shadow: 0 8px 16px rgba(146,184,255,.2); padding: 20px; color: #252525; font-size: 18px; font-weight: 600; border: 1px solid #ddd; transition: all 0.35s; position: relative; overflow: hidden; }
+  .single-courses-category a::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 3px; transition: height 0.5s; z-index: -1; }
+  .cources-main:nth-child(1) .single-courses-category a::before { background-color: #ff1949; }
+  .cources-main:nth-child(2) .single-courses-category a::before { background-color: #0eb582; }
+  .cources-main:nth-child(3) .single-courses-category a::before { background-color: #0093c9; }
+  .cources-main:nth-child(4) .single-courses-category a::before { background-color: #2d3942; }
+  .cources-main:nth-child(5) .single-courses-category a::before { background-color: #bfd131; }
+  .cources-main:nth-child(6) .single-courses-category a::before { background-color: #f49b29; }
+  .cources-main:nth-child(7) .single-courses-category a::before { background-color: #833a8d; }
+  .cources-main:nth-child(8) .single-courses-category a::before { background-color: #c81a7f; }
+  .single-courses-category a:hover::before { height: 100%; }
+  .single-courses-category a:hover { color: #fff; border-radius: 0; transform: translateY(1px); }
+  .icon-region { display: block; text-indent: -9999px; width: 44px; height: 44px; margin: 0 auto 10px; background: url('https://www.edushastra.com/wp-content/uploads/2022/04/regions_sprites_batches.png') no-repeat; }
+  .prep-delhi { background-position: 0 -853px; }
+  .prep-gurugram { background-position: 0 -283px; }
+  .prep-noida { background-position: 0 -428px; }
+  .prep-hydrebad { background-position: 0 -991px; }
+  .prep-bengaluru { background-position: 0 -712px; }
+  .prep-mumbai { background-position: 0 0; }
+  .prep-chennai { background-position: 0 -142px; }
+  .prep-kolkata { background-position: 0 -573px; }
+
+  /* Footer */
+  .site-footer { background: #002147; color: #d0d4d9; padding: 60px 0 0; }
+  .site-footer h4 { color: #fff; font-size: 1rem; }
+  .site-footer a { color: #d0d4d9; }
+  .site-footer a:hover { color: var(--danger); }
+  .site-footer ul { list-style: none; padding: 0; margin: 0; }
+  .site-footer ul li { line-height: 26px; }
+  .social-footer { margin: 16px 0; display: flex; gap: 6px; }
+  .ico-facebook, .ico-instagram, .ico-linkedin, .ico-youtube { display: inline-block; width: 26px; height: 24px; background: url('https://www.edushastra.com/wp-content/uploads/2025/11/edu-sprite_2025.png') no-repeat; text-indent: -9999px; }
+  .ico-facebook { background-position: -4px -89px; }
+  .ico-instagram { background-position: -4px -318px; }
+  .ico-linkedin { background-position: -4px -143px; }
+  .ico-youtube { background-position: -4px -197px; }
+  .footer-bottom { background: #001a39; padding: 18px 0; color: #d0d4d9; font-size: 0.75rem; }
+  .footer-bottom a { color: #d0d4d9; }
+
+  /* Section headers */
+  section h1, section h2 { font-size: 1.75rem; font-weight: 700; color: #333; margin: 0 0 20px; }
+  .connect-us h2 { font-size: 1.5rem; color: #333; font-weight: 400; margin-top: 20px; }
+
+  /* Alltopers block */
+  .alltopers-block { padding: 0 30px; margin-bottom: 20px; }
+  .alltopers-block .col-md-3 { margin-bottom: 20px; }
+
+  /* Course facets */
+  .course-facets-section .card { padding: 15px; display: block; width: 100%; margin-bottom: 10px; }
+  .course-facets-section h2 { font-weight: 500; font-size: 1.1rem; margin-bottom: 4px; }
+  .course-facets-section h4 { font-weight: 400; margin-bottom: 0; color: #333; font-size: 0.9rem; margin-top: 0; }
+  .course-facets-section p { padding: 0; font-size: 13px; margin: 4px 0 0; }
+
+  /* FAQs */
+  .cuet-aqs .contact-card h4 { font-size: 16px; }
+  .cuet-aqs .contact-card .media-body { font-size: 13px; line-height: 14px; }
+
+  /* Syllabus */
+  .cuet-syllabus .card { margin-bottom: 20px; }
+  .cuet-syllabus .card:hover { box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15); }
+  .cuet-syllabus .card-body h3 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+  .cuet-syllabus p { font-size: 14px; line-height: 18px; margin-bottom: 0; }
+  .cuet-syllabus a { color: #333; }
+  .cuet-syllabus a:hover { color: #04adef; }
+  .cuet-syllabus img { width: 100%; display: block; }
+
+  /* Yt embed */
+  .yt-embed { width: 100%; aspect-ratio: 16/9; border: 0; display: block; }
+
+  /* Responsive */
+  @media (max-width: 991px) {
+    .col-lg-3 { flex: 0 0 50%; max-width: 50%; }
+    .tutors-thumb { width: 100px; }
+    .slide { width: 280px; }
+    .slide iframe { height: 157px; }
+  }
+  @media (max-width: 767px) {
+    .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7 { flex: 0 0 100%; max-width: 100%; }
+    .nav-links { display: none; }
+    .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 58px; left: 0; right: 0; background: #fff; z-index: 998; padding: 10px 15px; box-shadow: 0 4px 6px rgba(0,0,0,.1); }
+    .menu-toggle-btn { display: block; }
+    section h1, section h2 { font-size: 1.25rem; }
+    .ribbonmain h2 { padding: 0 20px; font-size: 16px; }
+    .alltopers-block { padding: 0; }
+    .slide { width: 220px; }
+    .slide iframe { height: 124px; }
+    .teachers-main-page { padding: 20px 0; }
+    .col-lg-3 { flex: 0 0 50%; max-width: 50%; }
+    .tab-btn { font-size: 11px; padding: 10px 6px; }
+    .text-right { text-align: left; }
+  }
+  @media (max-width: 575px) {
+    .col-sm-6 { flex: 0 0 100%; max-width: 100%; }
+    .col-lg-3 { flex: 0 0 100%; max-width: 100%; }
+    .circleimg { width: 120px; }
+  }
+
+  /* Scroll to top */
+  #scrollToTopBtn { display: none; position: fixed; bottom: 60px; right: 20px; width: 44px; height: 44px; border-radius: 100%; border: none; background: #e91e63; color: #fff; font-size: 1.4em; cursor: pointer; z-index: 9999; line-height: 44px; text-align: center; }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="navigation-top">
+  <div class="container-fluid">
+    <a href="https://www.edushastra.com/" class="custom-logo-link">
+      <img src="https://www.edushastra.com/wp-content/uploads/2024/09/cropped-eduShastra_new_main.png" alt="EduShastra Education" height="40">
+    </a>
+    <nav class="nav-links" id="mainNav">
+      <a href="/">Home</a>
+      <a href="https://www.edushastra.com/about-us/">About Us</a>
+      <a href="https://www.edushastra.com/common-universities-entrance-test/">CUET Preparation</a>
+      <a href="https://www.edushastra.com/why-us/">Why Us?</a>
+      <a href="https://www.edushastra.com/edushastra-results/">All Results</a>
+      <a href="https://www.edushastra.com/blog/">Blog</a>
+      <a href="https://www.edushastra.com/contact-us/">Contact Us</a>
+      <a href="https://www.edushastra.com/free-courses-classes/" class="try-btn-nav">TRY IT FREE</a>
+    </nav>
+    <button class="menu-toggle-btn" onclick="document.getElementById('mainNav').classList.toggle('open')">☰ Menu</button>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div id="content">
+  <div class="container-fluid">
+
+    <!-- Hero -->
+    <div class="hero-section">
+      <h2 class="gold-title">Top Rated +4.9/5 Everywhere</h2>
+      <a href="https://www.edushastra.com/adaptive-course-path-personalized-learning/">
+        <h1 class="main-title">5-Levels Percentile Based Batches</h1>
+      </a>
+      <a href="https://www.edushastra.com/our-faculty-2">
+        <h2 class="sub-title" style="color:#000;font-weight:400;">CAT/GMAT 100%ilers as Faculty</h2>
+      </a>
+      <a href="https://www.edushastra.com/ability-based-model">
+        <h2 class="sub-title" style="color:#000;font-weight:400;">Ability Based Model - Lifetime Validity</h2>
+      </a>
+      <a href="https://www.edushastra.com/money-back-promise">
+        <h2 class="refund-title">+99%ile or Fee Refund Promise</h2>
+      </a>
+    </div>
+
+    <!-- Video Slider -->
+    <section>
+      <div class="image-slider-container">
+        <div class="image-slider">
+          <div class="slider-track">
+            <div class="slide"><iframe class="yt-embed" src="https://www.youtube.com/embed/aAedY_gSTrA" loading="lazy" allowfullscreen title="EduShastra"></iframe></div>
+            <div class="slide"><iframe class="yt-embed" src="https://www.youtube.com/embed/eOug8lFn2Ao" loading="lazy" allowfullscreen title="EduShastra"></iframe></div>
+            <div class="slide"><iframe class="yt-embed" src="https://www.youtube.com/embed/It3DHzDVcHk" loading="lazy" allowfullscreen title="EduShastra"></iframe></div>
+            <div class="slide"><iframe class="yt-embed" src="https://www.youtube.com/embed/UZnr29doDLo" loading="lazy" allowfullscreen title="EduShastra"></iframe></div>
+            <div class="slide"><iframe class="yt-embed" src="https://www.youtube.com/embed/epHftXoU3Rg" loading="lazy" allowfullscreen title="EduShastra"></iframe></div>
+            <div class="slide"><iframe class="yt-embed" src="https://www.youtube.com/embed/JHjPIO8cSx0" loading="lazy" allowfullscreen title="EduShastra"></iframe></div>
+            <!-- Duplicate for seamless loop -->
+            <div class="slide"><iframe class="yt-embed" src="https://www.youtube.com/embed/aAedY_gSTrA" loading="lazy" allowfullscreen title="EduShastra"></iframe></div>
+            <div class="slide"><iframe class="yt-embed" src="https://www.youtube.com/embed/eOug8lFn2Ao" loading="lazy" allowfullscreen title="EduShastra"></iframe></div>
+            <div class="slide"><iframe class="yt-embed" src="https://www.youtube.com/embed/It3DHzDVcHk" loading="lazy" allowfullscreen title="EduShastra"></iframe></div>
+            <div class="slide"><iframe class="yt-embed" src="https://www.youtube.com/embed/UZnr29doDLo" loading="lazy" allowfullscreen title="EduShastra"></iframe></div>
+            <div class="slide"><iframe class="yt-embed" src="https://www.youtube.com/embed/epHftXoU3Rg" loading="lazy" allowfullscreen title="EduShastra"></iframe></div>
+            <div class="slide"><iframe class="yt-embed" src="https://www.youtube.com/embed/JHjPIO8cSx0" loading="lazy" allowfullscreen title="EduShastra"></iframe></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Updates Block -->
+    <div class="container">
+      <div class="page-block">
+        <div class="news-block">
+          <ul>
+            <li>
+              <strong class="text-danger">09:00 AM IST • 20 March 2026</strong><br>
+              <strong>CUET UG 2026 Datesheet to Be Released Soon; Exams Likely from May 11</strong>
+              <p>TThe National Testing Agency (NTA) is set to release the CUET UG 2026 subject-wise datesheet shortly on its official website. The entrance exam is expected to be conducted between May 11 and May 31, 2026, in computer-based mode across multiple cities in India and abroad. Candidates can expect detailed information on exam dates, shifts, and subject-wise schedules soon, with the full timetable likely to be released by late March or early April.</p>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-md-7">
+                  <strong class="text-danger">06:09 AM IST • 18 March 2026</strong><br>
+                  <strong>EduShastra's Apex-25 Reinvents CUET Prep with Ability-Based Learning Model</strong>
+                  <p>EduShastra's revolutionary Apex-25 batch limits enrollment to 25 students—the "optimal size" for peer learning and true personalization. Unlike traditional time-based coaching, students advance only upon mastering concepts at 70%, 90%, and 100% percentile benchmarks through weekly evaluations. Each batch has 8-9 dedicated teachers (1:3 teacher-student ratio), ensuring intensive mentorship. The adaptive curriculum adjusts in real-time based on student performance—if learners struggle with Reading Comprehension, classes increase from 8 to 12 sessions. Featuring selective IQ-based admission, lifetime validity, interactive classes, and a money-back guarantee, the program employs course correction to ensure every student reaches their optimal level rather than rushing through fixed timelines.
+                  <a href="https://www.edushastra.com/faqs-99ile-apex-30-batch-course-details/" target="_blank"><strong class="text-danger">Learn more</strong></a></p>
+                </div>
+                <div class="col-md-5">
+                  <iframe class="yt-embed" src="https://www.youtube.com/embed/rDsQBo4AgYg" loading="lazy" allowfullscreen title="Apex Batch"></iframe>
+                </div>
+              </div>
+            </li>
+            <li>
+              <strong class="text-danger">06:00 AM IST • 23 February 2026</strong><br>
+              <strong>CUET UG 2026 Registration Window Reopened; Last Chance to Apply Till Feb 26</strong>
+              <p>The National Testing Agency (NTA) has reopened the registration window for CUET UG 2026, offering candidates a final opportunity to apply online until February 26, 2026. This special reopening was introduced after multiple student requests, but comes with a key warning—no correction window will be provided after submission. The exam is scheduled to be held between May 11 and May 31, 2026, in computer-based mode across India and select international centers.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Nav -->
+    <div class="container">
+      <div class="page-block">
+        <div class="container connect-us">
+          <div class="row"><div class="col-md-12"><h2>Get ready for CUET 2026 & 2027</h2></div></div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4"><a href="https://www.edushastra.com/common-universities-entrance-test/">
+              <div class="contact-card shadow-sm"><div class="media">
+                <img src="https://www.edushastra.com/wp-content/uploads/2020/06/cnt_cource-intro.png" alt="CUET Course" class="me-3">
+                <div class="media-body"><h4 class="mt-0">CUET Course Structure</h4>Mapping Phase<br>Foundation/Testing/Control Phase</div>
+              </div></div></a></div>
+            <div class="col-md-4"><a href="https://www.edushastra.com/faqs-cuet-99ile-apex-25-batches-details/">
+              <div class="contact-card shadow-sm"><div class="media">
+                <img src="https://www.edushastra.com/wp-content/uploads/2020/06/cnt_cource-structure.png" alt="Apex Batches" class="me-3">
+                <div class="media-body"><h4 class="mt-0">CUET +99%ile Apex Batches</h4>Admission through Entrance Test<br>Top 5% CUET Rank or Refund Guarantee</div>
+              </div></div></a></div>
+            <div class="col-md-4"><a href="https://www.edushastra.com/common-universities-entrance-test/">
+              <div class="contact-card shadow-sm"><div class="media">
+                <img src="https://www.edushastra.com/wp-content/uploads/2020/06/cnt_online-class.png" alt="Classroom" class="me-3">
+                <div class="media-body"><h4 class="mt-0">CUET Classroom Batches</h4>Personalized Learning Experience<br>Average Batch Size of 25-30 Students</div>
+              </div></div></a></div>
+            <div class="col-md-4"><a href="https://www.edushastra.com/common-universities-entrance-test-online/">
+              <div class="contact-card shadow-sm"><div class="media">
+                <img src="https://www.edushastra.com/wp-content/uploads/2020/06/cnt_edushastra.png" alt="Online" class="me-3">
+                <div class="media-body"><h4 class="mt-0">CUET Live Online Batches</h4>Audio, Video &amp; Chat Interaction<br>Live In-class Doubt Solving</div>
+              </div></div></a></div>
+            <div class="col-md-4"><a href="https://www.edushastra.com/our-faculty-2/">
+              <div class="contact-card shadow-sm"><div class="media">
+                <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Faculty" class="me-3">
+                <div class="media-body"><h4 class="mt-0">Faculty Details</h4>CAT/GMAT 100%ilers as Faculty<br>IITs/IIMs/Doctorate/Ivy League</div>
+              </div></div></a></div>
+            <div class="col-md-4"><a href="https://www.edushastra.com/results-and-topper-videos/">
+              <div class="contact-card shadow-sm"><div class="media">
+                <img src="https://www.edushastra.com/wp-content/uploads/2023/09/exam.png" alt="Results" class="me-3">
+                <div class="media-body"><h4 class="mt-0">Results &amp; Toppers Videos</h4>CUET &amp; CAT Success Stories<br>Top University Selections</div>
+              </div></div></a></div>
+            <div class="col-md-4"><a href="https://www.edushastra.com/ability-based-model">
+              <div class="contact-card shadow-sm"><div class="media">
+                <img src="https://www.edushastra.com/wp-content/uploads/2020/06/cnt_online-class.png" alt="Validity" class="me-3">
+                <div class="media-body"><h4 class="mt-0">Unlimited Course Validity</h4>Lifetime Course Validity<br>Repeated Course Cycles</div>
+              </div></div></a></div>
+            <div class="col-md-4"><a href="https://www.edushastra.com/adaptive-course-path-personalized-learning">
+              <div class="contact-card shadow-sm"><div class="media">
+                <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="Batches" class="me-3">
+                <div class="media-body"><h4 class="mt-0">5-Levels Percentile Batches</h4>4-Phase CUET Course Model<br>IQ-Based Batch Segregation</div>
+              </div></div></a></div>
+            <div class="col-md-4"><a href="https://www.edushastra.com/faqs-money-back-promise/">
+              <div class="contact-card shadow-sm"><div class="media">
+                <img src="https://www.edushastra.com/wp-content/uploads/2020/06/cnt_money-back.png" alt="Money Back" class="me-3">
+                <div class="media-body"><h4 class="mt-0">Money-Back Promise</h4>Top 5% CUET Rank or Refund<br>Confidence in Our Education</div>
+              </div></div></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="container alltabs" style="margin-bottom:40px;">
+      <div class="tabs-nav" role="tablist">
+        <button class="tab-btn active" onclick="showTab(0, this)">Course Introduction</button>
+        <button class="tab-btn" onclick="showTab(1, this)">Course Structure</button>
+        <button class="tab-btn" onclick="showTab(2, this)">CUET Syllabus</button>
+        <button class="tab-btn" onclick="showTab(3, this)">Free Admission Counseling</button>
+      </div>
+
+      <!-- Tab 1: Course Introduction -->
+      <div class="tab-panel active" id="tab-0">
+
+        <div class="page-block">
+          <h2>CUET 2026 Exam Overview:</h2>
+          <p>The Common University Entrance Test (CUET) 2026 is the mandatory national-level entrance exam for admission into undergraduate programs at all Central Universities in India, along with numerous State, Private, and Deemed universities. Conducted by the National Testing Agency (NTA), it provides a single-window opportunity for Class 12 students to secure seats in top-tier institutions like DU, BHU, and JNU.</p>
+          <p><strong>Key Highlights for CUET 2026</strong></p>
+          <p><strong>Exam Date (Tentative):</strong> May 11 – May 31, 2026 (Conducted in multiple shifts).<br>
+          <strong>Eligibility:</strong> Must have passed or be appearing in the Class 12/equivalent examination.<br>
+          <strong>Exam Mode:</strong> Computer-Based Test (CBT).</p>
+          <p><strong>Exam Pattern &amp; Syllabus</strong></p>
+          <p>The exam is structured into three sections:</p>
+          <p><strong>1. Section I (Languages):</strong> Tests proficiency through Reading Comprehension, Vocabulary, and Literary Aptitude. Includes 13 main Indian languages and 20 optional foreign/regional languages.<br>
+          <strong>2. Section II (Domain Subjects):</strong> Covers 23 specific subjects (e.g., Physics, Accountancy, History). Syllabus is strictly mapped to NCERT Class 12.<br>
+          <strong>3. Section III (General Test):</strong> Covers General Knowledge, Current Affairs, Numerical Ability, and Logical &amp; Analytical Reasoning.</p>
+          <p><strong>Questions are MCQs. Correct answers award +5 marks, while incorrect MCQs carry a -1 penalty.</strong></p>
+        </div>
+
+        <div class="page-block">
+          <h2>All CUET Batches Schedules:</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead><tr>
+                <th>Weekend &amp; Weekday Batches</th>
+                <th>Registration Deadline</th>
+                <th>Mapping Start</th>
+                <th>Batch Start</th>
+                <th>Seats Status</th>
+              </tr></thead>
+              <tbody>
+                <tr><td>Subject (Domain)-Specific Course Weekday Batches</td><td>28th March</td><td>28th March</td><td>28th March</td><td>Open</td></tr>
+                <tr><td>Subject (Domain)-Specific Course Weekend Batches</td><td>28th March</td><td>28th March</td><td>28th March</td><td>Open</td></tr>
+                <tr><td>CUET 2026 Weekday Batches</td><td>28th March</td><td>28th March</td><td>28th March</td><td>Open</td></tr>
+                <tr><td>CUET 2026 Weekend Batches</td><td>28th March</td><td>28th March</td><td>28th March</td><td>Open</td></tr>
+                <tr><td>CUET 2027, 12th Class Board Weekday Batches</td><td>28th March</td><td>28th March</td><td>28th March</td><td>Open</td></tr>
+                <tr><td>CUET 2027, 12th Class Board Weekend Batches</td><td>28th March</td><td>28th March</td><td>28th March</td><td>Open</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="page-block">
+          <a href="https://www.edushastra.com/contact-us">
+            <p style="color:red"><strong>For City specific details about Study-Center Locations and Class Schedules, Please click here</strong></p>
+          </a>
+        </div>
+
+        <div class="page-block">
+          <h2>Teaching Model</h2>
+          <p>We have a "Hybrid Customized Interactive teaching model". We believe that education should be interactive, two-dimensional, personalized and tailored to every student. All of our courses are a blend of Online home classes &amp; Classroom-coaching.</p>
+          <h2>Admission Standard Operating Procedure</h2>
+          <p>Every new student is mapped into a "<strong>Zero Group</strong>" for a week. After a week, based on performance in "Mapping Phase", students are divided into five different IQ groups based on <strong class="text-danger">Intellect, Intelligence (IQ), Aptitude, Attitude, and Commitment.</strong></p>
+        </div>
+
+        <div class="page-block">
+          <h2>24/7 Doubt Connect Program</h2>
+          <ol>
+            <li><strong>24/7 Doubt/Questions Discussion Forum:</strong> Real-time expert help.</li>
+            <li><strong>Highly Interactive Live Sessions:</strong> Audio, Video, Writing and Chatting controls.</li>
+            <li><strong>Weekly Doubt Sessions:</strong> Live sessions every week from subject teachers.</li>
+            <li><strong>Social Media Live Groups:</strong> Query resolution via social media groups.</li>
+            <li><strong>Teachers Panel-Contact Details:</strong> Panel of 7-9 teachers per batch reachable via call, email, skype.</li>
+            <li><strong>Dedicated Student Support Team:</strong> contact@edushastra.com</li>
+          </ol>
+        </div>
+
+        <div class="page-block">
+          <h2>Money-Back Promise</h2>
+          <ul>
+            <li>Our 6 series batches offer a <strong>60+ Percentile or Top 40% CUET Rank</strong> promise.</li>
+            <li>Our 7 series batches offer a <strong>70+ Percentile or Top 30% CUET Rank</strong> promise.</li>
+            <li>Our 8 series batches offer a <strong>80+ Percentile or Top 20% CUET Rank</strong> promise.</li>
+            <li>Our 9 series batches offer a <strong>90+ Percentile or Top 10% CUET Rank</strong> promise.</li>
+            <li>Our 10 series batches offer a <strong>96+ Percentile or Top 4% CUET Rank</strong> promise.</li>
+          </ul>
+        </div>
+
+        <!-- Fees Section -->
+        <div class="fees-section">
+          <h2>CUET 2026 Programs' Fees:</h2>
+
+          <h3 style="margin:20px 0 10px;">Elite Batches:</h3>
+          <div class="new-fees-structure mb-3">
+            <div class="row">
+
+              <!-- Free Live Hybrid -->
+              <div class="col-md-4">
+                <div class="card position-relative">
+                  <div class="hybrid-badge"></div>
+                  <div class="media-fees-block">
+                    <div class="flex-grow-1 text-center">
+                      <div class="font-20 mb-1">Free Live Hybrid Course</div>
+                      <div class="btn-group">
+                        <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">15,999</button>
+                        <button class="btn btn-white btn-sm" type="button">Free</button>
+                      </div>
+                    </div>
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+                  </div>
+                  <div class="limited-box">
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+                    Limited Seats Available – Enroll Now!
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex course-details mb-1">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+                      <h3 class="ms-2">Free Live Hybrid Course</h3>
+                    </div>
+                    <div class="d-flex mb-2">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+                      <div class="ms-2 font-13">500+ Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Live In-class Doubt Solving<br>Personalized Learning Experience</strong></div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="course-cost">Free <span class="text-decoration-line-through">₹15,999/-</span><br><span class="font-13">(GST Included)</span></div>
+                      <div class="discount-tag2">100% Discount Applied</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/faq-cuet-live-hybrid-free-course/">Explore</a>
+                      <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/faq-cuet-live-hybrid-free-course/">Enroll Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Self Paced -->
+              <div class="col-md-4">
+                <div class="card position-relative">
+                  <div class="online-badge"></div>
+                  <div class="media-fees-block">
+                    <div class="flex-grow-1 text-center">
+                      <div class="font-20 mb-1">Self Paced Personalized Course</div>
+                      <div class="btn-group">
+                        <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">2,599</button>
+                        <button class="btn btn-white btn-sm" type="button">1,499/</button>
+                      </div>
+                    </div>
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+                  </div>
+                  <div class="limited-box">
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+                    Limited Seats Available – Enroll Now!
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex course-details mb-1">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+                      <h3 class="ms-2">Self Paced Personalized Course</h3>
+                    </div>
+                    <div class="d-flex mb-2">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+                      <div class="ms-2 font-13">500+ Hours Course Cycle<br><strong>Personalized Learning Experience<br>24X7 Doubt Solving<br>Validity till November 2026</strong></div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="course-cost">₹1,499/- <span class="text-decoration-line-through">₹2,599/-</span><br><span class="font-13">(GST Included)</span></div>
+                      <div class="discount-tag2">42% Discount Applied</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/faqs-cuet-self-paced-personalized-course/">Explore</a>
+                      <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-2025-free-rs-11-live-hybrid-course/">Enroll Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Elite English + General Test -->
+              <div class="col-md-4">
+                <div class="card position-relative">
+                  <div class="online-badge"></div>
+                  <div class="media-fees-block">
+                    <div class="flex-grow-1 text-center">
+                      <div class="font-20 mb-1">Elite English + General Test</div>
+                      <div class="btn-group">
+                        <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">5,998/-</button>
+                        <button class="btn btn-white btn-sm" type="button">2,999/-</button>
+                      </div>
+                    </div>
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+                  </div>
+                  <div class="limited-box">
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+                    Limited Seats Available – Enroll Now!
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex course-details mb-1">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+                      <h3 class="ms-2">Elite English + General Test</h3>
+                    </div>
+                    <div class="d-flex mb-2">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+                      <div class="ms-2 font-13">500+ Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Live In-class Doubt Solving<br>Batch Size: 70-80 Students<br>Validity till November 2026</strong></div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="course-cost">₹2,999/- <span class="text-decoration-line-through">₹5,998/-</span><br><span class="font-13">(GST Included)</span></div>
+                      <div class="discount-tag2">50% Discount Applied</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/elite-eliteplus-cuet/">Explore</a>
+                      <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-elite-english-general-test-programs-fees/">Enroll Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- /elite batches -->
+
+          <h3 style="margin:20px 0 10px;">Elite Plus Batches:</h3>
+          <div class="new-fees-structure mb-3">
+            <div class="row">
+
+              <!-- Elite Plus Live Online -->
+              <div class="col-md-4">
+                <div class="card position-relative">
+                  <div class="online-badge"></div>
+                  <div class="media-fees-block">
+                    <div class="flex-grow-1 text-center">
+                      <div class="font-20 mb-1">Elite Plus Live Online Course</div>
+                      <div class="btn-group">
+                        <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">9,998/-</button>
+                        <button class="btn btn-white btn-sm" type="button">4,999/-</button>
+                      </div>
+                    </div>
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+                  </div>
+                  <div class="limited-box">
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+                    Limited Seats Available – Enroll Now!
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex course-details mb-1">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+                      <h3 class="ms-2">Elite Plus Live Online Course</h3>
+                    </div>
+                    <div class="d-flex mb-2">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+                      <div class="ms-2 font-13">500+ Hours Course Cycle<br><strong>Personalized Learning Experience<br>Batch Size: 25-30 Students<br>Validity till November 2026</strong></div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="course-cost">₹4,999/- <span class="text-decoration-line-through">₹9,998/-</span><br><span class="font-13">(GST Included)</span></div>
+                      <div class="discount-tag2">50% Discount Applied</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/elite-eliteplus-cuet/">Explore</a>
+                      <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-elite-plus-live-online-course-program-fees/">Enroll Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Elite Plus Classroom -->
+              <div class="col-md-4">
+                <div class="card position-relative">
+                  <div class="offline-badge"></div>
+                  <div class="media-fees-block">
+                    <div class="flex-grow-1 text-center">
+                      <div class="font-20 mb-1">Elite Plus Classroom Course</div>
+                      <div class="btn-group">
+                        <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">17,998/-</button>
+                        <button class="btn btn-white btn-sm" type="button">8,999/-</button>
+                      </div>
+                    </div>
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+                  </div>
+                  <div class="limited-box">
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+                    Limited Seats Available – Enroll Now!
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex course-details mb-1">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+                      <h3 class="ms-2">Elite Plus Classroom Course</h3>
+                    </div>
+                    <div class="d-flex mb-2">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+                      <div class="ms-2 font-13">500+ Hours Course Cycle<br><strong>Personalized Learning Experience<br>Batch Size: 25-30 Students<br>Validity till November 2026</strong></div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="course-cost">₹8,999/- <span class="text-decoration-line-through">₹17,998/-</span><br><span class="font-13">(GST Included)</span></div>
+                      <div class="discount-tag2">50% Discount Applied</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/elite-eliteplus-cuet/">Explore</a>
+                      <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-elite-plus-classroom-course-program-fees/">Enroll Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Elite Plus Hybrid -->
+              <div class="col-md-4">
+                <div class="card position-relative">
+                  <div class="hybrid-badge"></div>
+                  <div class="media-fees-block">
+                    <div class="flex-grow-1 text-center">
+                      <div class="font-20 mb-1">Elite Plus Hybrid (Classroom+Online)</div>
+                      <div class="btn-group">
+                        <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">19,998/-</button>
+                        <button class="btn btn-white btn-sm" type="button">9,999/-</button>
+                      </div>
+                    </div>
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+                  </div>
+                  <div class="limited-box">
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+                    Limited Seats Available – Enroll Now!
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex course-details mb-1">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+                      <h3 class="ms-2">Elite Plus Hybrid (Classroom+Online)</h3>
+                    </div>
+                    <div class="d-flex mb-2">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+                      <div class="ms-2 font-13">500+ Hours Course Cycle<br><strong>Personalized Learning Experience<br>Batch Size: 25-30 Students<br>Validity till November 2026</strong></div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="course-cost">₹9,999/- <span class="text-decoration-line-through">₹19,998/-</span><br><span class="font-13">(GST Included)</span></div>
+                      <div class="discount-tag2">50% Discount Applied</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/elite-eliteplus-cuet/">Explore</a>
+                      <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-elite-plus-hybrid-classroom-online-program-fees/">Enroll Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /elite plus -->
+
+          <h3 style="margin:20px 0 10px;">+99%ile Apex-25 Batches:</h3>
+          <div class="new-fees-structure mb-3">
+            <div class="row">
+
+              <!-- Apex Live Online -->
+              <div class="col-md-4">
+                <div class="card position-relative">
+                  <div class="online-badge"></div>
+                  <div class="media-fees-block-apex">
+                    <div class="flex-grow-1 text-center">
+                      <div class="font-20 mb-1">+99%ile Apex-25 Batch Live Online</div>
+                      <div class="btn-group">
+                        <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">17,998/-</button>
+                        <button class="btn btn-white btn-sm" type="button">8,999/-</button>
+                      </div>
+                    </div>
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+                  </div>
+                  <div class="limited-box">
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+                    Limited Seats Available – Enroll Now!
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex course-details mb-1">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+                      <h3 class="ms-2">+99%ile Apex-25 Live Online Course</h3>
+                    </div>
+                    <div class="d-flex mb-2">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+                      <div class="ms-2 font-13">500+ Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Live 24X7 Doubt Solving<br>Batch Size: 25 Students<br>Lifetime Validity | App. Fees: Rs. 2</strong></div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="course-cost">₹8,999/- <span class="text-decoration-line-through">₹17,998/-</span><br><span class="font-13">(GST Included)</span></div>
+                      <div class="discount-tag2">50% Discount Applied</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/faqs-cuet-99ile-apex-25-batches-details/">Explore</a>
+                      <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-apex-online-course/">Apply Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Apex Classroom -->
+              <div class="col-md-4">
+                <div class="card position-relative">
+                  <div class="offline-badge"></div>
+                  <div class="media-fees-block-apex">
+                    <div class="flex-grow-1 text-center">
+                      <div class="font-20 mb-1">+99%ile Apex-25 Classroom (Offline)</div>
+                      <div class="btn-group">
+                        <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">29,998/-</button>
+                        <button class="btn btn-white btn-sm" type="button">14,999/-</button>
+                      </div>
+                    </div>
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+                  </div>
+                  <div class="limited-box">
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+                    Limited Seats Available – Enroll Now!
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex course-details mb-1">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+                      <h3 class="ms-2">+99%ile Apex-25 Classroom Course</h3>
+                    </div>
+                    <div class="d-flex mb-2">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+                      <div class="ms-2 font-13">500+ Hours Course Cycle<br><strong>Personalized Learning Experience<br>Live 24X7 Doubt Solving<br>Batch Size: 25 Students<br>Lifetime Validity | App. Fees: Rs. 2</strong></div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="course-cost">₹14,999/- <span class="text-decoration-line-through">₹29,998/-</span><br><span class="font-13">(GST Included)</span></div>
+                      <div class="discount-tag2">50% Discount Applied</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/faqs-cuet-99ile-apex-25-batches-details/">Explore</a>
+                      <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-apex-25-batch-classroom-offline-course/">Apply Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Apex Hybrid -->
+              <div class="col-md-4">
+                <div class="card position-relative">
+                  <div class="hybrid-badge"></div>
+                  <div class="media-fees-block-apex">
+                    <div class="flex-grow-1 text-center">
+                      <div class="font-20 mb-1">+99%ile Apex-25 Hybrid Course</div>
+                      <div class="btn-group">
+                        <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">31,998/-</button>
+                        <button class="btn btn-white btn-sm" type="button">15,999/-</button>
+                      </div>
+                    </div>
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+                  </div>
+                  <div class="limited-box">
+                    <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+                    Limited Seats Available – Enroll Now!
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex course-details mb-1">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+                      <h3 class="ms-2">+99%ile Apex-25 Hybrid (Offline &amp; Online)</h3>
+                    </div>
+                    <div class="d-flex mb-2">
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+                      <div class="ms-2 font-13">500+ Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Live 24X7 Doubt Solving<br>Batch Size: 25 Students<br>Lifetime Validity | App. Fees: Rs. 2</strong></div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="course-cost">₹15,999/-<span class="text-decoration-line-through">₹31,998/-</span><br><span class="font-13">(GST Included)</span></div>
+                      <div class="discount-tag2">50% Discount Applied</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/faqs-cuet-99ile-apex-25-batches-details/">Explore</a>
+                      <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-apex-25-batch-hybrid/">Apply Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- /apex -->
+        </div><!-- /fees-section -->
+<h3 style="margin:20px 0 10px;">Commerce Domains:</h3>
+<div class="new-fees-structure mb-3">
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="card position-relative">
+        <div class="online-badge"></div>
+        <div class="media-fees-block-apex">
+          <div class="flex-grow-1 text-center">
+            <div class="font-20 mb-1">Accountancy Elite Course</div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">3,998</button>
+              <button class="btn btn-white btn-sm" type="button">1,999/</button>
+            </div>
+          </div>
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+        </div>
+        <div class="limited-box">
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+          Limited Seats Available – Enroll Now!
+        </div>
+        <div class="card-body">
+          <div class="d-flex course-details mb-1">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+            <h3 class="ms-2">Accountancy Elite Course</h3>
+          </div>
+          <div class="d-flex mb-2">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+            <div class="ms-2 font-13">160 Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Batch Size: 70-80 Students<br>Validity till November 2026</strong></div>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <div class="course-cost">₹1,999/- <span class="text-decoration-line-through">₹3,998/-</span></div>
+            <div class="discount-tag2">Discount of 50% applied</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/faq-commerce-domains">Explore</a>
+            <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-accountancy-elite-course-program-fees">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card position-relative">
+        <div class="online-badge"></div>
+        <div class="media-fees-block-apex">
+          <div class="flex-grow-1 text-center">
+            <div class="font-20 mb-1">Economics Elite Course</div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">3,998</button>
+              <button class="btn btn-white btn-sm" type="button">1,999/</button>
+            </div>
+          </div>
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+        </div>
+        <div class="limited-box">
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+          Limited Seats Available – Enroll Now!
+        </div>
+        <div class="card-body">
+          <div class="d-flex course-details mb-1">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+            <h3 class="ms-2">Economics Elite Course</h3>
+          </div>
+          <div class="d-flex mb-2">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+            <div class="ms-2 font-13">160 Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Batch Size: 70-80 Students<br>Validity till November 2026</strong></div>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <div class="course-cost">₹1,999/- <span class="text-decoration-line-through">₹3,998/-</span></div>
+            <div class="discount-tag2">Discount of 50% applied</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/faq-commerce-domains">Explore</a>
+            <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-economics-elite-course-programs-fees/">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card position-relative">
+        <div class="online-badge"></div>
+        <div class="media-fees-block-apex">
+          <div class="flex-grow-1 text-center">
+            <div class="font-20 mb-1">Business Studies Elite Course</div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">3,998</button>
+              <button class="btn btn-white btn-sm" type="button">1,999/</button>
+            </div>
+          </div>
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+        </div>
+        <div class="limited-box">
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+          Limited Seats Available – Enroll Now!
+        </div>
+        <div class="card-body">
+          <div class="d-flex course-details mb-1">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+            <h3 class="ms-2">Business Studies Elite Course</h3>
+          </div>
+          <div class="d-flex mb-2">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+            <div class="ms-2 font-13">160 Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Batch Size: 70-80 Students<br>Validity till November 2026</strong></div>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <div class="course-cost">₹1,999/- <span class="text-decoration-line-through">₹3,998/-</span></div>
+            <div class="discount-tag2">Discount of 50% applied</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/faq-commerce-domains">Explore</a>
+            <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-business-studies-elite-course-programs-fees">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="row d-flex justify-content-center">
+
+    <div class="col-md-4">
+      <div class="card position-relative">
+        <div class="online-badge"></div>
+        <div class="media-fees-block-apex">
+          <div class="flex-grow-1 text-center">
+            <div class="font-20 mb-1">Mathematics Elite Course</div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">3,998</button>
+              <button class="btn btn-white btn-sm" type="button">1,999/</button>
+            </div>
+          </div>
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+        </div>
+        <div class="limited-box">
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+          Limited Seats Available – Enroll Now!
+        </div>
+        <div class="card-body">
+          <div class="d-flex course-details mb-1">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+            <h3 class="ms-2">Mathematics Elite Course</h3>
+          </div>
+          <div class="d-flex mb-2">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+            <div class="ms-2 font-13">160 Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Batch Size: 70-80 Students<br>Validity till November 2026</strong></div>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <div class="course-cost">₹1,999/- <span class="text-decoration-line-through">₹3,998/-</span></div>
+            <div class="discount-tag2">Discount of 50% applied</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/elite-eliteplus-cuet">Explore</a>
+            <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-mathematics-elite-course-programs-fees">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<h3 style="margin:20px 0 10px;">Science Domains:</h3>
+<div class="new-fees-structure mb-3">
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="card position-relative">
+        <div class="online-badge"></div>
+        <div class="media-fees-block-apex">
+          <div class="flex-grow-1 text-center">
+            <div class="font-20 mb-1">Physics Elite Course</div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">3,998</button>
+              <button class="btn btn-white btn-sm" type="button">1,999/</button>
+            </div>
+          </div>
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+        </div>
+        <div class="limited-box">
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+          Limited Seats Available – Enroll Now!
+        </div>
+        <div class="card-body">
+          <div class="d-flex course-details mb-1">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+            <h3 class="ms-2">Physics Elite Course</h3>
+          </div>
+          <div class="d-flex mb-2">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+            <div class="ms-2 font-13">160 Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Batch Size: 70-80 Students<br>Validity till November 2026</strong></div>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <div class="course-cost">₹1,999/- <span class="text-decoration-line-through">₹3,998/-</span></div>
+            <div class="discount-tag2">Discount of 50% applied</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/elite-eliteplus-cuet">Explore</a>
+            <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-physics-elite-course-programs-fees">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card position-relative">
+        <div class="online-badge"></div>
+        <div class="media-fees-block-apex">
+          <div class="flex-grow-1 text-center">
+            <div class="font-20 mb-1">Chemistry Elite Course</div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">3,998</button>
+              <button class="btn btn-white btn-sm" type="button">1,999/</button>
+            </div>
+          </div>
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+        </div>
+        <div class="limited-box">
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+          Limited Seats Available – Enroll Now!
+        </div>
+        <div class="card-body">
+          <div class="d-flex course-details mb-1">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+            <h3 class="ms-2">Chemistry Elite Course</h3>
+          </div>
+          <div class="d-flex mb-2">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+            <div class="ms-2 font-13">160 Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Batch Size: 70-80 Students<br>Validity till November 2026</strong></div>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <div class="course-cost">₹1,999/- <span class="text-decoration-line-through">₹3,998/-</span></div>
+            <div class="discount-tag2">Discount of 50% applied</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/elite-eliteplus-cuet/">Explore</a>
+            <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-chemistry-elite-course-programs-fees/">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card position-relative">
+        <div class="online-badge"></div>
+        <div class="media-fees-block-apex">
+          <div class="flex-grow-1 text-center">
+            <div class="font-20 mb-1">Mathematics Elite Course</div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">3,998</button>
+              <button class="btn btn-white btn-sm" type="button">1,999/</button>
+            </div>
+          </div>
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+        </div>
+        <div class="limited-box">
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+          Limited Seats Available – Enroll Now!
+        </div>
+        <div class="card-body">
+          <div class="d-flex course-details mb-1">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+            <h3 class="ms-2">Mathematics Elite Course</h3>
+          </div>
+          <div class="d-flex mb-2">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+            <div class="ms-2 font-13">160 Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Batch Size: 70-80 Students<br>Validity till November 2026</strong></div>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <div class="course-cost">₹1,999/- <span class="text-decoration-line-through">₹3,998/-</span></div>
+            <div class="discount-tag2">Discount of 50% applied</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/elite-eliteplus-cuet/">Explore</a>
+            <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-mathematics-elite-course-program-fees/">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="row d-flex justify-content-center">
+
+    <div class="col-md-4">
+      <div class="card position-relative">
+        <div class="online-badge"></div>
+        <div class="media-fees-block-apex">
+          <div class="flex-grow-1 text-center">
+            <div class="font-20 mb-1">Biology Elite Course</div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">3,998</button>
+              <button class="btn btn-white btn-sm" type="button">1,999/</button>
+            </div>
+          </div>
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+        </div>
+        <div class="limited-box">
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+          Limited Seats Available – Enroll Now!
+        </div>
+        <div class="card-body">
+          <div class="d-flex course-details mb-1">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+            <h3 class="ms-2">Biology Elite Course</h3>
+          </div>
+          <div class="d-flex mb-2">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+            <div class="ms-2 font-13">160 Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Batch Size: 70-80 Students<br>Validity till November 2026</strong></div>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <div class="course-cost">₹1,999/- <span class="text-decoration-line-through">₹3,998/-</span></div>
+            <div class="discount-tag2">Discount of 50% applied</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/elite-eliteplus-cuet/">Explore</a>
+            <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-biology-elite-course-programs-fees/">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<h3 style="margin:20px 0 10px;">Humanities Domain:</h3>
+<div class="new-fees-structure mb-3">
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="card position-relative">
+        <div class="online-badge"></div>
+        <div class="media-fees-block-apex">
+          <div class="flex-grow-1 text-center">
+            <div class="font-20 mb-1">Sociology Elite Course</div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">3,998</button>
+              <button class="btn btn-white btn-sm" type="button">1,999/</button>
+            </div>
+          </div>
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+        </div>
+        <div class="limited-box">
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+          Limited Seats Available – Enroll Now!
+        </div>
+        <div class="card-body">
+          <div class="d-flex course-details mb-1">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+            <h3 class="ms-2">Sociology Elite Course</h3>
+          </div>
+          <div class="d-flex mb-2">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+            <div class="ms-2 font-13">160 Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Batch Size: 70-80 Students<br>Validity till November 2026</strong></div>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <div class="course-cost">₹1,999/- <span class="text-decoration-line-through">₹3,998/-</span></div>
+            <div class="discount-tag2">Discount of 50% applied</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/elite-eliteplus-cuet/">Explore</a>
+            <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-sociology-elite-course-programs-fees/">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card position-relative">
+        <div class="online-badge"></div>
+        <div class="media-fees-block-apex">
+          <div class="flex-grow-1 text-center">
+            <div class="font-20 mb-1">History Elite Course</div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">3,998</button>
+              <button class="btn btn-white btn-sm" type="button">1,999/</button>
+            </div>
+          </div>
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+        </div>
+        <div class="limited-box">
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+          Limited Seats Available – Enroll Now!
+        </div>
+        <div class="card-body">
+          <div class="d-flex course-details mb-1">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+            <h3 class="ms-2">History Elite Course</h3>
+          </div>
+          <div class="d-flex mb-2">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+            <div class="ms-2 font-13">160 Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Batch Size: 70-80 Students<br>Validity till November 2026</strong></div>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <div class="course-cost">₹1,999/- <span class="text-decoration-line-through">₹3,998/-</span></div>
+            <div class="discount-tag2">Discount of 50% applied</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/elite-eliteplus-cuet/">Explore</a>
+            <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-history-elite-course-programs-fees/">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card position-relative">
+        <div class="online-badge"></div>
+        <div class="media-fees-block-apex">
+          <div class="flex-grow-1 text-center">
+            <div class="font-20 mb-1">Geography Elite Course</div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">3,998</button>
+              <button class="btn btn-white btn-sm" type="button">1,999/</button>
+            </div>
+          </div>
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+        </div>
+        <div class="limited-box">
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+          Limited Seats Available – Enroll Now!
+        </div>
+        <div class="card-body">
+          <div class="d-flex course-details mb-1">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+            <h3 class="ms-2">Geography Elite Course</h3>
+          </div>
+          <div class="d-flex mb-2">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+            <div class="ms-2 font-13">160 Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Batch Size: 70-80 Students<br>Validity till November 2026</strong></div>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <div class="course-cost">₹1,999/- <span class="text-decoration-line-through">₹3,998/-</span></div>
+            <div class="discount-tag2">Discount of 50% applied</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/elite-eliteplus-cuet/">Explore</a>
+            <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-geography-elite-course-programs-fees/">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="row d-flex justify-content-center">
+
+    <div class="col-md-4">
+      <div class="card position-relative">
+        <div class="online-badge"></div>
+        <div class="media-fees-block-apex">
+          <div class="flex-grow-1 text-center">
+            <div class="font-20 mb-1">Political Science Elite Course</div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">3,998</button>
+              <button class="btn btn-white btn-sm" type="button">1,999/</button>
+            </div>
+          </div>
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+        </div>
+        <div class="limited-box">
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+          Limited Seats Available – Enroll Now!
+        </div>
+        <div class="card-body">
+          <div class="d-flex course-details mb-1">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+            <h3 class="ms-2">Political Science Elite Course</h3>
+          </div>
+          <div class="d-flex mb-2">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+            <div class="ms-2 font-13">160 Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Batch Size: 70-80 Students<br>Validity till November 2026</strong></div>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <div class="course-cost">₹1,999/- <span class="text-decoration-line-through">₹3,998/-</span></div>
+            <div class="discount-tag2">Discount of 50% applied</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/elite-eliteplus-cuet/">Explore</a>
+            <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-political-science-elite-course-programs-fees/">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card position-relative">
+        <div class="online-badge"></div>
+        <div class="media-fees-block-apex">
+          <div class="flex-grow-1 text-center">
+            <div class="font-20 mb-1">Psychology Elite Course</div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-danger font-weight-bold" type="button" style="text-decoration:line-through;">3,998</button>
+              <button class="btn btn-white btn-sm" type="button">1,999/</button>
+            </div>
+          </div>
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fav-teachers.png" alt="teachers" class="tutors-thumb">
+        </div>
+        <div class="limited-box">
+          <img src="https://www.edushastra.com/wp-content/uploads/2024/12/fast-time.png" alt="fast">
+          Limited Seats Available – Enroll Now!
+        </div>
+        <div class="card-body">
+          <div class="d-flex course-details mb-1">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/global-learning.png" alt="Global" width="26" height="26">
+            <h3 class="ms-2">Psychology Elite Course</h3>
+          </div>
+          <div class="d-flex mb-2">
+            <img src="https://www.edushastra.com/wp-content/uploads/2024/12/topic.png" alt="topic" width="22" height="22" style="flex-shrink:0;margin-top:2px;">
+            <div class="ms-2 font-13">160 Hours Course Cycle<br><strong>Audio, Video &amp; Chat Interaction<br>Batch Size: 70-80 Students<br>Validity till November 2026</strong></div>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <div class="course-cost">₹1,999/- <span class="text-decoration-line-through">₹3,998/-</span></div>
+            <div class="discount-tag2">Discount of 50% applied</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a class="btn btn-primary d-block w-100 mr-3" href="https://www.edushastra.com/elite-eliteplus-cuet/">Explore</a>
+            <a class="btn btn-danger d-block w-100" href="https://www.edushastra.com/cuet-psychology-elite-course-programs-fees/">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+               <!-- Apex Faculty Section -->
+        <div class="container">
+          <h2>Our Apex Batch Faculty</h2>
+          <img src="https://www.edushastra.com/wp-content/uploads/2026/01/Apex-final.webp" alt="Apex Batch" class="apex-img">
+
+          <h2 style="font-size:16px;margin:10px 0 0;">Faculty Credentials (VERIFIED BY THIRD-PARTY AUDIT FIRM):</h2>
+          <ol style="margin-top:10px;">
+            <li><strong>Manohar Lal Parashar:</strong> Academic Architect (IIM Ahmedabad '88 &amp; UChicago Booth). <a href="https://www.edushastra.com/m-l-parashar/" target="_blank"><strong class="text-danger">Verify</strong></a> | <a href="https://www.linkedin.com/in/edushastra/" target="_blank"><strong class="text-danger">LinkedIn</strong></a></li>
+            <li><strong>Vipul Parashar:</strong> CAT 2024 (99.99%ile), CAT 2023 (99.98%ile), GMAT 780 (2016). <a href="https://www.edushastra.com/vipul-parashar/" target="_blank"><strong class="text-danger">Verify</strong></a> | <a href="https://www.linkedin.com/in/vipul-parashar-edushastra/" target="_blank"><strong class="text-danger">LinkedIn</strong></a></li>
+            <li><strong>Pawan Shahi:</strong> GMAT Focus Edition (100%ile - 765), CAT Quant (100%ile). <a href="https://www.edushastra.com/pawan-shahi/" target="_blank"><strong class="text-danger">Verify</strong></a> | <a href="https://www.linkedin.com/in/pawan-shahi-117765145/" target="_blank"><strong class="text-danger">LinkedIn</strong></a></li>
+            <li><strong>Ayush Matcha:</strong> CAT 99.78%ile &amp; IIM Udaipur Alumnus. <a href="https://www.edushastra.com/ayush-matcha/" target="_blank"><strong class="text-danger">Verify</strong></a> | <a href="https://www.linkedin.com/in/ayush-matcha/" target="_blank"><strong class="text-danger">LinkedIn</strong></a></li>
+          </ol>
+
+          <!-- Teachers -->
+          <section class="teachers-main-page" style="margin-top:30px;">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 card-taecher">
+                  <div class="teacher-block card">
+                    <figure>
+                      <img src="https://www.edushastra.com/wp-content/uploads/2023/08/M_L_Parashar.webp" alt="M L Parashar" class="circleimg">
+                      <figcaption>
+                        <h4>Mr. M L Parashar</h4>
+                        <h5>The Maverick Mindset, Our Guiding light</h5>
+                        <p><strong>Believer in "Everyone is a Genius"</strong><br>Rtd. Director, Dept. of Science &amp; Tech., Govt. of India<br>Rtd. Deputy Secretary, Govt. of India, IIM-A, IIT-K</p>
+                        <a href="https://www.edushastra.com/m-l-parashar" target="_blank" class="more-button">Know More</a>
+                        <a href="https://www.linkedin.com/in/edushastra/" target="_blank" class="icons-linkedin">LinkedIn</a>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="col-md-4 card-taecher">
+                  <div class="teacher-block card">
+                    <figure>
+                      <img src="https://www.edushastra.com/wp-content/uploads/2025/09/Vipul-Parashar-EduShastra.webp" alt="Vipul Parashar" class="circleimg">
+                      <figcaption>
+                        <h4>Mr. Vipul Parashar</h4>
+                        <h5>The Epitome of Optimism &amp; Positivity</h5>
+                        <p><strong>Believer in "Everything is Possible"</strong><br>12+ yrs Teaching Exp in Education Industry<br>DU, NIFT, INSEAD, Harvard Business School</p>
+                        <a href="https://www.edushastra.com/vipul-parashar" target="_blank" class="more-button">Know More</a>
+                        <a href="https://www.linkedin.com/in/vipul-parashar-edushastra/" target="_blank" class="icons-linkedin">LinkedIn</a>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="col-md-4 card-taecher">
+                  <div class="teacher-block card">
+                    <figure>
+                      <img src="https://www.edushastra.com/wp-content/uploads/2025/02/ayush1.webp" alt="Ayush Matcha" class="circleimg">
+                      <figcaption>
+                        <h4>Mr. Ayush Matcha</h4>
+                        <h5>The Dispeller of Darkness of Ignorance</h5>
+                        <p><strong>Believer in "Perseverance is the key to Success"</strong><br>4+ yrs Teaching Exp in Education Industry<br>CAT'22 99.78%, CAT Topper, IIM 2023-25</p>
+                        <a href="https://www.edushastra.com/ayush-matcha" target="_blank" class="more-button">Know More</a>
+                        <a href="https://www.linkedin.com/in/ayush-matcha/" target="_blank" class="icons-linkedin">LinkedIn</a>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="justify-content:center;">
+                <div class="col-md-4 card-taecher">
+                  <div class="teacher-block card">
+                    <figure>
+                      <img src="https://www.edushastra.com/wp-content/uploads/2026/01/vibha-e1767786486545.webp" alt="Vibha Malhotra" class="circleimg">
+                      <figcaption>
+                        <h4>Ms. Vibha Malhotra</h4>
+                        <h5>The Word Smith, Our Perfectionist</h5>
+                        <p><strong>Believer in "Nothing Having Worth Comes Easy"</strong><br>16+ yrs Teaching Exp in Education Industry<br>CAT QA 100%iler, GMAT FE 745 Scorer</p>
+                        <a href="https://www.edushastra.com/vidhi-malhotra" target="_blank" class="more-button">Know More</a>
+                        <a href="https://www.linkedin.com/in/Vibha_malhotra+124Ads" target="_blank" class="icons-linkedin">LinkedIn</a>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="col-md-4 card-taecher">
+                  <div class="teacher-block card">
+                    <figure>
+                      <img src="https://www.edushastra.com/wp-content/uploads/2024/12/teachers007.webp" alt="Pawan Shahi" class="circleimg">
+                      <figcaption>
+                        <h4>Mr. Pawan Shahi</h4>
+                        <h5>The Mathematical Genius, Quantitative Thinker</h5>
+                        <p><strong>Believer in "Mathematics: Mother of all Sciences"</strong><br>CAT 2024 99.92%iler, GMAT FE 765 Scorer<br>NIT Alumnus. CAT Topper.</p>
+                        <a href="https://www.edushastra.com/pawan-shahi" target="_blank" class="more-button">Know More</a>
+                        <a href="https://www.linkedin.com/in/pawan-shahi-117765145/" target="_blank" class="icons-linkedin">LinkedIn</a>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Free Live Classes -->
+        <div class="page-block">
+          <div class="container">
+            <div class="row mb-3">
+              <div class="col-md-6"><h2>FREE Upcoming Live Online Classes</h2></div>
+              <div class="col-md-6 text-right"><a href="https://www.youtube.com/c/EduShastra?sub_confirmation=1" target="_blank" class="btn btn-warning"><strong>All Classes</strong></a></div>
+            </div>
+            <div class="row">
+              <div class="col-md-3"><iframe class="yt-embed" src="https://www.youtube.com/embed/ibE231qp9cI" loading="lazy" allowfullscreen title="Free Class"></iframe><p><strong>Upcoming Free live session</strong></p></div>
+              <div class="col-md-3"><iframe class="yt-embed" src="https://www.youtube.com/embed/In8YN1nITMo" loading="lazy" allowfullscreen title="Free Class"></iframe><p><strong>Upcoming Free live session</strong></p></div>
+              <div class="col-md-3"><iframe class="yt-embed" src="https://www.youtube.com/embed/8Zr_8wdRW1U" loading="lazy" allowfullscreen title="Free Class"></iframe><p><strong>Upcoming Free live session</strong></p></div>
+              <div class="col-md-3"><iframe class="yt-embed" src="https://www.youtube.com/embed/bAbse5yMhWc" loading="lazy" allowfullscreen title="Free Class"></iframe><p><strong>Upcoming Free live session</strong></p></div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /tab-0 -->
+
+      <!-- Tab 2: Course Structure -->
+      <div class="tab-panel" id="tab-1">
+        <div class="page-block">
+          <h2>Course Structure</h2>
+          <p>CUET Course will comprehensively cover all sections: Section IA – 13 Languages, Section IB – 20 Languages, Section II – 27 Domain specific Subjects and Section III – General Test.</p>
+          <p class="text-danger"><strong>All Phases of the course are designed to be a "One-on-One" Instruction.</strong></p>
+          <h4>All CUET Courses are divided into four phases:</h4>
+          <ol>
+            <li><strong>Introductory or Mapping Phase (One-on-One Stage):</strong> Employed at the beginning, usually 2-4 sessions. Instructors analyze every student. Takes 10% of total course time.</li>
+            <li><strong>Foundation Phase (Batch Stage):</strong> Covers basics of all sections. This phase is around 20-50% of the whole course.</li>
+            <li><strong>Testing Phase (One-on-One Stage):</strong> Computer Adaptive Tests, Computer Based Tests, and Paper Based Tests.</li>
+            <li><strong>Control Phase (One-on-One Stage):</strong> Looks into any gaps in test preparation.</li>
+          </ol>
+
+          <h2>CUET Course Facets</h2>
+          <div class="container course-facets-section p-0">
+            <div class="row">
+              <div class="col-md-6 d-flex"><div class="card border"><h2>Full Course: 500+ Hours Classes</h2><h4>Section-1 + Section-3/Section-2: Minimum 160+ Hours</h4><p>Unlimited Classes · Unlimited Validity · Personalised Learning</p></div></div>
+              <div class="col-md-6 d-flex"><div class="card border"><h2>Comprehensive Study Content</h2><h4>8k+ Class Video · Unlimited Mock · 50k+ Question Bank</h4><p>Updated Material · Practice Tests · Question Banks</p></div></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 d-flex"><div class="card border"><h2>Unlimited(100+) Elite CUETs</h2><h4>All India Level Full Length CUETs</h4><p>Detailed Reviews · Solution Workshops · Discussion Videos</p></div></div>
+              <div class="col-md-6 d-flex"><div class="card border"><h2>250+ Select Test Series</h2><h4>250+ Topic Wise Test Series Sets</h4><p>Real time exam experience · Enables Concept Building</p></div></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 d-flex"><div class="card border"><h2>Real-Time Doubt Clearance</h2><h4>Live Online Classes · Facebook Groups</h4><p>Weekly Doubt-Clearing Mentoring sessions</p></div></div>
+              <div class="col-md-6 d-flex"><div class="card border"><h2>Money (Fees) Back Guarantee</h2><h4>CUET 95%ile or Refund Guarantee</h4><p>Top 5% Rank in CUET or Money (Fees) back Guarantee</p></div></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 d-flex"><div class="card border"><h2>All University Mentoring</h2><h4>Expert Guidance in University/Course Selection</h4><p>Free consultations – Career Guidance for Students</p></div></div>
+              <div class="col-md-6 d-flex"><div class="card border"><h2>IITs/IIMs/Doctorate/Ivy League Faculty</h2><h4>Expert Teachers for every subject</h4><p>Detailed Teachers' Profile on Homepage &amp; LinkedIn</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: CUET Syllabus -->
+      <div class="tab-panel" id="tab-2">
+        <div class="page-block">
+          <h2>CUET Examination Structure</h2>
+          <p><strong>CUET (UG) – 2026 &amp; 2027 will consist of the following 4 Sections:</strong></p>
+          <ul>
+            <li><strong>Section IA</strong> – 13 Languages (Tamil, Telugu, Kannada, Malayalam, Marathi, Gujarati, Odiya, Bengali, Assamese, Punjabi, English, Hindi and Urdu)</li>
+            <li><strong>Section IB</strong> – 20 Languages</li>
+            <li><strong>Section II</strong> – 27 Domain specific Subjects</li>
+            <li><strong>Section III</strong> – General Test</li>
+          </ul>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead><tr><th>Section</th><th>Subjects/Tests</th><th>Questions to Attempt</th><th>Duration</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Section IA Languages</strong></td><td>13 Languages – Reading Comprehension, Literary Aptitude &amp; Vocabulary</td><td>40 out of 50</td><td>45 Minutes each</td></tr>
+                <tr><td><strong>Section IB Languages</strong></td><td>20 Languages</td><td>40 out of 50</td><td>45 Minutes each</td></tr>
+                <tr><td><strong>Section II – Domain</strong></td><td>27 Domain specific subjects based on NCERT Class XII syllabus</td><td>40 out of 50</td><td>45 Minutes each</td></tr>
+                <tr><td><strong>Section III General Test</strong></td><td>GK, Current Affairs, Numerical Ability, Logical &amp; Analytical Reasoning</td><td>60 out of 75</td><td>60 Minutes</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>CUET Syllabus</h2>
+          <div class="cuet-syllabus">
+            <div class="row">
+              <div class="col-md-3"><div class="card"><a href="https://www.edushastra.com/cuet-syllabus/accountancy"><img src="https://www.edushastra.com/wp-content/uploads/2022/04/cuet_accountancy-1.jpg" alt="Accountancy"><div class="card-body"><h3>Accountancy</h3><p>Accounting for Not-for-Profit Organisations and Partnership…</p></div></a></div></div>
+              <div class="col-md-3"><div class="card"><a href="https://www.edushastra.com/cuet-syllabus/biology"><img src="https://www.edushastra.com/wp-content/uploads/2022/04/cuet-Biology.jpg" alt="Biology"><div class="card-body"><h3>Biology</h3><p>Reproduction, Genetics and Evolution, Human Welfare…</p></div></a></div></div>
+              <div class="col-md-3"><div class="card"><a href="https://www.edushastra.com/cuet-syllabus/business-studies/"><img src="https://www.edushastra.com/wp-content/uploads/2022/04/cuet-Business-Studies.jpg" alt="Business Studies"><div class="card-body"><h3>Business Studies</h3><p>Principles and Functions of Management…</p></div></a></div></div>
+              <div class="col-md-3"><div class="card"><a href="https://www.edushastra.com/cuet-syllabus/chemistry/"><img src="https://www.edushastra.com/wp-content/uploads/2022/04/cuet-Chemistry.jpg" alt="Chemistry"><div class="card-body"><h3>Chemistry</h3><p>Classification of solids based on different…</p></div></a></div></div>
+              <div class="col-md-3"><div class="card"><a href="https://www.edushastra.com/cuet-syllabus/computer-science/"><img src="https://www.edushastra.com/wp-content/uploads/2022/04/cuet-computer-science.jpg" alt="Computer Science"><div class="card-body"><h3>Computer Science</h3><p>Exception Handling: syntax errors, exceptions…</p></div></a></div></div>
+              <div class="col-md-3"><div class="card"><a href="https://www.edushastra.com/cuet-syllabus/agriculture"><img src="https://www.edushastra.com/wp-content/uploads/2022/04/cuet-Agriculture.jpg" alt="Agriculture"><div class="card-body"><h3>Agriculture</h3><p>Agrometeorology, Genetics and Plant Breeding…</p></div></a></div></div>
+              <div class="col-md-3"><div class="card"><a href="https://www.edushastra.com/cuet-syllabus/anthropology"><img src="https://www.edushastra.com/wp-content/uploads/2022/04/cuet-Anthropology.jpg" alt="Anthropology"><div class="card-body"><h3>Anthropology</h3><p>Preliminary knowledge of Human genetics…</p></div></a></div></div>
+              <div class="col-md-3"><div class="card"><a href="https://www.edushastra.com/cuet-syllabus/art-education-sculpture"><img src="https://www.edushastra.com/wp-content/uploads/2022/04/cuet-Art-Sculpture.jpg" alt="Art Sculpture"><div class="card-body"><h3>Art Education Sculpture</h3><p>The Rajasthani and Pahari Schools of Miniature Painting…</p></div></a></div></div>
+            </div>
+          </div>
+          <div class="d-block w-100 text-center" style="margin-top:20px;">
+            <a href="https://www.edushastra.com/cuet-syllabus" target="_blank" class="btn btn-warning"><strong>View All Syllabus</strong></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 4: Free Admission Counseling -->
+      <div class="tab-panel" id="tab-3">
+        <div class="page-block">
+          <h2>Free Admission Counseling &amp; Other Value-added Services</h2>
+          <p>Our association continues until the end of the admission process. All these services are an integral part of all the courses. We offer an end-to-end solution for all University admissions.</p>
+          <ul>
+            <li>Profile Evaluation based on IQ &amp; EQ Profile facets.</li>
+            <li>University &amp; Courses Selection based upon aspirant's profile strengths.</li>
+            <li>Profile Mapping with targeted University &amp; Courses.</li>
+            <li>University &amp; Courses Application Assistance &amp; Counseling.</li>
+            <li>EduShastra Alumni Assistance &amp; Mentoring.</li>
+            <li>Comprehensive and rigorous Interview preparation.</li>
+            <li>Educational loan and Scholarship Counseling.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div><!-- /tabs -->
+
+    <!-- Results Videos -->
+    <div class="resultsvideo">
+      <div class="alltopers-block">
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col-md-6"><h4 class="pt-8">CUET Preparation &amp; Toppers</h4></div>
+            <div class="col-md-6 text-right"><a href="https://www.youtube.com/c/EduShastra?sub_confirmation=1" target="_blank" class="btn btn-warning"><strong>View All Toppers</strong></a></div>
+          </div>
+          <div class="row">
+            <div class="col-md-3"><iframe class="yt-embed" src="https://www.youtube.com/embed/aAedY_gSTrA" loading="lazy" allowfullscreen title="CUET"></iframe></div>
+            <div class="col-md-3"><iframe class="yt-embed" src="https://www.youtube.com/embed/eOug8lFn2Ao" loading="lazy" allowfullscreen title="CUET"></iframe></div>
+            <div class="col-md-3"><iframe class="yt-embed" src="https://www.youtube.com/embed/It3DHzDVcHk" loading="lazy" allowfullscreen title="CUET"></iframe></div>
+            <div class="col-md-3"><iframe class="yt-embed" src="https://www.youtube.com/embed/UZnr29doDLo" loading="lazy" allowfullscreen title="CUET"></iframe></div>
+          </div>
+        </div>
+        <div class="container" style="margin-top:30px;">
+          <div class="row mb-3">
+            <div class="col-md-6"><h4 class="pt-8">CAT Toppers &amp; Preparation Strategy</h4></div>
+            <div class="col-md-6 text-right"><a href="https://www.youtube.com/c/EduShastra?sub_confirmation=1" target="_blank" class="btn btn-warning"><strong>View All Toppers</strong></a></div>
+          </div>
+          <div class="row">
+            <div class="col-md-3"><a href="https://youtu.be/PE9V4W-jlyw" target="_blank"><img src="https://www.edushastra.com/wp-content/uploads/2023/08/CAT_Toppers_01.webp" alt="CAT Toppers" style="width:100%;border-radius:4px;"></a></div>
+            <div class="col-md-3"><a href="https://youtu.be/68NRsAA5o0U" target="_blank"><img src="https://www.edushastra.com/wp-content/uploads/2023/08/CAT_Toppers_02.webp" alt="CAT Toppers" style="width:100%;border-radius:4px;"></a></div>
+            <div class="col-md-3"><a href="https://youtu.be/JtV_nm0zRhQ" target="_blank"><img src="https://www.edushastra.com/wp-content/uploads/2023/08/CAT_Toppers_03.webp" alt="CAT Toppers" style="width:100%;border-radius:4px;"></a></div>
+            <div class="col-md-3"><a href="https://youtu.be/hE7_LGsRO70" target="_blank"><img src="https://www.edushastra.com/wp-content/uploads/2023/08/CAT_Toppers_04.webp" alt="CAT Toppers" style="width:100%;border-radius:4px;"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQs -->
+    <div class="container faqs-section cuet-aqs mb-3" style="margin-top:30px;">
+      <div class="w-100 d-block text-center text-danger"><h2>Frequently Asked Questions</h2></div>
+      <div class="row">
+        <div class="col-md-4"><a href="https://www.edushastra.com/cuet-faqs/#section1"><div class="card contact-card shadow-sm"><div class="media"><div class="media-body"><h4 class="mt-0">Changes in CUET (UG) – 2026</h4>A candidate can choose any 10 subjects from…</div></div></div></a></div>
+        <div class="col-md-4"><a href="https://www.edushastra.com/cuet-faqs/#section2"><div class="card contact-card shadow-sm"><div class="media"><div class="media-body"><h4 class="mt-0">Overview about the rationale</h4>NTA stands for the National Testing Agency…</div></div></div></a></div>
+        <div class="col-md-4"><a href="https://www.edushastra.com/cuet-faqs/#section3"><div class="card contact-card shadow-sm"><div class="media"><div class="media-body"><h4 class="mt-0">Overview of Scheme</h4>It is meant for admission to UG courses of…</div></div></div></a></div>
+        <div class="col-md-4"><a href="https://www.edushastra.com/cuet-faqs/#section4"><div class="card contact-card shadow-sm"><div class="media"><div class="media-body"><h4 class="mt-0">Online Application Form</h4>You can submit your online Application Form…</div></div></div></a></div>
+        <div class="col-md-4"><a href="https://www.edushastra.com/cuet-faqs/#section5"><div class="card contact-card shadow-sm"><div class="media"><div class="media-body"><h4 class="mt-0">Eligibility to various Courses</h4>As the eligibility criteria for admission may…</div></div></div></a></div>
+        <div class="col-md-4"><a href="https://www.edushastra.com/common-universities-entrance-test-faqs"><div class="card contact-card shadow-sm"><div class="media"><div class="media-body"><h4 class="mt-0">All-in-one Queries</h4>The Common University Entrance Test CUET…</div></div></div></a></div>
+      </div>
+    </div>
+
+    <!-- City Centres -->
+    <div class="footer-center-section" style="padding:30px 0;">
+      <div class="container p-0">
+        <div class="row"><div style="width:100%;text-align:center;"><div class="ribbonmain"><h2>Centres &amp; Batches Details</h2></div></div></div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 col-md-4 cources-main"><div class="single-courses-category mb-30"><a href="https://www.edushastra.com/common-universities-entrance-test-in-delhi"><div class="icon-region prep-delhi"></div>Prep in Delhi NCR</a></div></div>
+          <div class="col-lg-3 col-sm-6 col-md-4 cources-main"><div class="single-courses-category mb-30"><a href="https://www.edushastra.com/common-universities-entrance-test-in-gurugram"><div class="icon-region prep-gurugram"></div>Prep in Gurugram</a></div></div>
+          <div class="col-lg-3 col-sm-6 col-md-4 cources-main"><div class="single-courses-category mb-30"><a href="https://www.edushastra.com/common-universities-entrance-test-in-noida"><div class="icon-region prep-noida"></div>Prep in Noida</a></div></div>
+          <div class="col-lg-3 col-sm-6 col-md-4 cources-main"><div class="single-courses-category mb-30"><a href="https://www.edushastra.com/common-universities-entrance-test-in-hyderabad"><div class="icon-region prep-hydrebad"></div>Prep in Hyderabad</a></div></div>
+          <div class="col-lg-3 col-sm-6 col-md-4 cources-main"><div class="single-courses-category mb-30"><a href="https://www.edushastra.com/common-universities-entrance-test-in-bengaluru"><div class="icon-region prep-bengaluru"></div>Prep in Bengaluru</a></div></div>
+          <div class="col-lg-3 col-sm-6 col-md-4 cources-main"><div class="single-courses-category mb-30"><a href="https://www.edushastra.com/common-universities-entrance-test-in-mumbai"><div class="icon-region prep-mumbai"></div>Prep in Mumbai</a></div></div>
+          <div class="col-lg-3 col-sm-6 col-md-4 cources-main"><div class="single-courses-category mb-30"><a href="https://www.edushastra.com/common-universities-entrance-test-in-chennai"><div class="icon-region prep-chennai"></div>Prep in Chennai</a></div></div>
+          <div class="col-lg-3 col-sm-6 col-md-4 cources-main"><div class="single-courses-category mb-30"><a href="https://www.edushastra.com/common-universities-entrance-test-in-kolkata"><div class="icon-region prep-kolkata"></div>Prep in Kolkata</a></div></div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /container-fluid -->
+</div><!-- /content -->
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h4>About</h4>
+        <p><img src="https://www.edushastra.com/wp-content/uploads/2024/03/edu-shahstra-logo-footer.png" alt="EduShastra" style="height:35px;"></p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.appedu.edushastra" target="_blank"><img src="https://www.edushastra.com/wp-content/uploads/2024/08/eduonplaystore_white-01-01.png" alt="Play Store" style="height:44px;"></a></p>
+        <p style="color:#d0d4d9;font-size:14px;"><strong style="color:#fff;">EduShastra</strong> is an Education &amp; Real Estate Group providing affordable, high-quality educational and infrastructural solutions.</p>
+        <div class="social-footer">
+          <a href="https://www.facebook.com/EduShastra.Philanthropy/" target="_blank" class="ico-facebook">Facebook</a>
+          <a href="https://www.instagram.com/edushastra/" target="_blank" class="ico-instagram">Instagram</a>
+          <a href="https://www.linkedin.com/company/edushastra" target="_blank" class="ico-linkedin">LinkedIn</a>
+          <a href="https://www.youtube.com/c/EduShastra?sub_confirmation=1" target="_blank" class="ico-youtube">YouTube</a>
+        </div>
+        <img src="https://www.edushastra.com/wp-content/uploads/2024/03/positivessl_trust_seal_sm_124x32.png" alt="SSL" style="height:32px;margin-top:10px;">
+      </div>
+      <div class="col-md-3">
+        <h4>Contact</h4>
+        <address style="font-style:normal;color:#d0d4d9;font-size:14px;line-height:1.8;">
+          <strong style="color:#fff;">EduShastra Knowledge House</strong><br>
+          6th Floor, Brilliant Solitaire,<br>
+          Vijay Nagar, Indore, MP, India<br>
+          <a href="https://www.edushastra.com/contact-us"><strong>View All Office Locations</strong></a><br><br>
+          <strong>Call Us: <a href="tel:01147082205" style="color:#d0d4d9;">011-47082205</a></strong><br>
+          <a href="https://mail.google.com/mail/?view=cm&to=contact@edushastra.com" target="_blank"><strong>Mail Us: contact@edushastra.com</strong></a>
+        </address>
+      </div>
+      <div class="col-md-3">
+        <h4>Courses</h4>
+        <ul class="pb-3">
+          <li><a href="https://www.edushastra.com/gmat-prep">GMAT Preparation</a></li>
+          <li><a href="https://www.edushastra.com/gmat-cat-coaching">GMCAT Preparation</a></li>
+          <li><a href="https://www.edushastra.com/cat-2026">CAT Preparation</a></li>
+          <li><a href="https://www.edushastra.com/common-universities-entrance-test">CUET Preparation</a></li>
+        </ul>
+        <h4 style="margin-top:12px;">Free University</h4>
+        <ul class="pb-3">
+          <li><a href="https://www.edushastra.com/free-courses-classes">TRY IT FREE</a></li>
+          <li><a href="https://www.edushastra.com/cat-2026">CAT Live Hybrid Free/Re.1 Course</a></li>
+          <li><a href="https://www.edushastra.com/common-universities-entrance-test">CUET Live Hybrid Free/Re.1 Course</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>Links</h4>
+        <ul class="pb-3">
+          <li><a href="https://www.edushastra.com/faqs">FAQ</a></li>
+          <li><a href="https://www.edushastra.com/blog">Blog</a></li>
+          <li><a href="https://www.edushastra.com/courses">Courses</a></li>
+          <li><a href="https://www.edushastra.com/why-us">Why Us</a></li>
+          <li><a href="https://www.edushastra.com/special-education">Special Education</a></li>
+          <li><a href="https://www.edushastra.com/referral-program">Referral Program</a></li>
+          <li><a href="https://www.edushastra.com/payment-page">Instalment Payments</a></li>
+          <li><a href="https://www.edushastra.com/terms-conditions-and-policies">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 text-left">Copyright © 2026 edushastra.com</div>
+        <div class="col-md-6 text-right">
+          <a href="https://www.edushastra.com/terms-of-use">Terms of Use</a> |
+          <a href="https://www.edushastra.com/privacy-policy">Privacy Policy</a> |
+          <a href="https://www.edushastra.com/terms-conditions-and-policies">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll To Top -->
+<button id="scrollToTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+  // Tab switching
+  function showTab(index, btn) {
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + index).classList.add('active');
+    btn.classList.add('active');
+  }
+
+  // Scroll to top button
+  window.addEventListener('scroll', function() {
+    var btn = document.getElementById('scrollToTopBtn');
+    btn.style.display = window.scrollY > 300 ? 'block' : 'none';
+  });
+</script>
+</body>
+</html>
